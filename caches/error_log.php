@@ -41,3 +41,16 @@
 ) | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>06-12 16:16:18 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>06-12 16:16:18 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-12 18:18:02 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-12 18:45:46 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-12 18:47:50 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-12 18:49:33 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-12 18:49:51 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-12 19:02:17 | 2 | Invalid argument supplied for foreach() | phpcms\modules\content\fields\downfile\field_edit_form.inc.php | 4
+<?php exit;?>06-12 21:39:33 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-12 21:39:33 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
