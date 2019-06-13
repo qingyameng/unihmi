@@ -1,0 +1,36 @@
+<!--body start-->
+<div id="body">
+	<!--focus start-->
+	<div id="InnerBanner">
+
+	</div>
+	<!--foncus end-->
+	<div class="HeightTab clearfix"></div>
+	<!--inner start -->
+	<div class="inner">
+
+
+
+	<!--right start-->
+	<div class="right">
+		<div class="Position" align="right">
+			<span>您的位置：
+				
+				<a href="/">首页</a> > 
+				{pc:get sql="SELECT arrparentid FROM u_category WHERE catid=$catid" num="1"}
+				<?php 
+				$data_str1 = str_replace('0,17,','',$data[0]['arrparentid']);
+				$data_str2 = str_replace('0,17','',$data_str1);
+				?>
+					{if !empty($data_str2)}
+					<?php $dat = explode(',',$data_str2); ?>
+						{loop $dat $r}
+							{pc:get sql="SELECT url,catname FROM u_category WHERE catid=$r" num="1" return="d"}
+								<a href="{$d[0]['url']}">{$d[0]['catname']}</a> > 
+							{/pc}
+						{/loop}
+					{/if}
+				{/pc}
+				
+				<a href='{$url}'>{$catname}</a></span>
+		</div>

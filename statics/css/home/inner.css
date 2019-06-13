@@ -52,7 +52,7 @@
 	line-height:35px;
 	padding-left:30px;
 	border-bottom:1px dotted #DDDDDD;
-	background:url("../images/box_icon1.png") no-repeat 12px 12px;
+	background:url("../../images/home/box_icon1.png") no-repeat 12px 12px;
 	letter-spacing: 2px;
 }	
 #body .inner .left .Sbox .blank ul li a:hover{
@@ -116,7 +116,7 @@
 	line-height:200%;
 	}
 #body .inner .right .main .content .download{
-	background:url("../images/downicon.gif") no-repeat 15px 7px;
+	background:url("../../images/home/downicon.gif") no-repeat 15px 7px;
 	padding-left:55px;
 	border:1px solid #F5F5F5;
 	line-height:40px;
@@ -129,7 +129,7 @@
 	margin-top:10px;}
 #body .inner .right .main .content .prenext ul li{
 	line-height:30px;
-	background:url("../images/jiantou.gif") no-repeat 0px 1px;
+	background:url("../../images/home/jiantou.gif") no-repeat 0px 1px;
 	padding-left:15px;}				
 				
 #body .inner .right .main .ArticleList{
@@ -393,7 +393,7 @@ FILTER: progid:DXImageTransform.Microsoft.Shadow(Color=#999999, Strength=3, Dire
 	padding:10px 20px;
 	border-bottom:1px dashed #CCCCCC;
 	font-size:14px;
-	background:url("../images/ico4.jpg") no-repeat left 18px;}
+	background:url("../../images/home/ico4.jpg") no-repeat left 18px;}
 
 
 #body .inner .right .main .SiteMap ul li ul li{
@@ -434,7 +434,7 @@ FILTER: progid:DXImageTransform.Microsoft.Shadow(Color=#999999, Strength=3, Dire
 	padding:0px 20px 5px 20px;}	
 #body .inner .right .main .FeedBack .Fright .Fcontent{
 	width:600px;
-	background:url("../images/PostBG.jpg") no-repeat left top;
+	background:url("../../images/home/PostBG.jpg") no-repeat left top;
 	padding:10px 0px;
 	}
 #body .inner .right .main .FeedBack .Fright .Fcontent p{
@@ -445,7 +445,7 @@ FILTER: progid:DXImageTransform.Microsoft.Shadow(Color=#999999, Strength=3, Dire
 	line-height:20px;
 	color:#FFFFFF;
 	height:25px;
-	background:url("../images/picon.gif") no-repeat 2px 0px;
+	background:url("../../images/home/picon.gif") no-repeat 2px 0px;
 	padding-left:20px;
 	font-weight:bold;}
 #body .inner .right .main .FeedBack .Fright .Fcontent .Freply p{

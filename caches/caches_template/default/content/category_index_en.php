@@ -112,14 +112,14 @@ jQuery(".fullSlide").slide({
         </div>
       </div>
       <div class="HeightTab clearfix"></div>
-      <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed">
         <ul>
           <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=38e63056386c6d11fed16f6e5f90fd1c&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D34+order+by+id+DESC&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=34 order by id DESC LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
           <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
           <tr>
             <td width='75%'>
-              <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>">
+              <img src='<?php echo IMG_PATH;?>home/index_jt2.png' class="newsImg" />&nbsp;&nbsp;&nbsp;
+              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>" class="newsTitle">
                 <?php echo substr($r['title'],0,26);?>
               </a>
             </td>
@@ -129,7 +129,7 @@ jQuery(".fullSlide").slide({
           </tr>
           <tr>
             <td colspan='2' style='padding-left:20px; border-bottom:1px solid #b1b1b1; padding-bottom: 6px;'>
-              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>" style='color:#666666'>
+              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>" class="newsDes">
           &nbsp; &nbsp; 
           <?php if(strlen($r['description'])>60) { ?>
           <?php echo substr($r['description'],0,60);?>......

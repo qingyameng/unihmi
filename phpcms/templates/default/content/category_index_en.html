@@ -112,14 +112,14 @@ jQuery(".fullSlide").slide({
         </div>
       </div>
       <div class="HeightTab clearfix"></div>
-      <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed">
         <ul>
           {pc:get sql="select title,description,url,updatetime from u_news where catid=34 order by id DESC" num="1"}
           {loop $data $r}
           <tr>
             <td width='75%'>
-              <img src='{IMG_PATH}home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href="{$r['url']}" target='_blank' title="{$r['title']}">
+              <img src='{IMG_PATH}home/index_jt2.png' class="newsImg" />&nbsp;&nbsp;&nbsp;
+              <a href="{$r['url']}" target='_blank' title="{$r['title']}" class="newsTitle">
                 {substr($r['title'],0,26)}
               </a>
             </td>
@@ -129,7 +129,7 @@ jQuery(".fullSlide").slide({
           </tr>
           <tr>
             <td colspan='2' style='padding-left:20px; border-bottom:1px solid #b1b1b1; padding-bottom: 6px;'>
-              <a href="{$r['url']}" target='_blank' title="{$r['title']}" style='color:#666666'>
+              <a href="{$r['url']}" target='_blank' title="{$r['title']}" class="newsDes">
           &nbsp; &nbsp; 
           {if strlen($r['description'])>60}
           {substr($r['description'],0,60)}......
