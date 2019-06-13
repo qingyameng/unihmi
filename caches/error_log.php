@@ -54,3 +54,78 @@
 <?php exit;?>06-12 19:02:17 | 2 | Invalid argument supplied for foreach() | phpcms\modules\content\fields\downfile\field_edit_form.inc.php | 4
 <?php exit;?>06-12 21:39:33 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>06-12 21:39:33 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 08:48:31 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 08:48:31 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 10:45:40 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 10:45:40 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 11:00:00 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 11:00:00 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 11:58:11 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 11:58:24 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 11:58:36 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 11:58:44 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 11:58:53 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 11:59:22 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 11:59:31 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:18:23 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:18:58 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:32:23 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:32:34 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:32:43 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:32:51 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:33:00 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:36:55 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:37:17 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 12:54:05 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
+<?php exit;?>06-13 12:54:03 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 13:42:45 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 13:42:45 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 14:54:24 | 2 | Illegal string offset 'allowmultisubmit' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 43
+<?php exit;?>06-13 14:54:24 | 2 | Illegal string offset 'allowmultisubmit' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 44
+<?php exit;?>06-13 14:54:24 | 2 | Illegal string offset 'allowunreg' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 48
+<?php exit;?>06-13 14:54:24 | 2 | Illegal string offset 'allowunreg' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 49
+<?php exit;?>06-13 14:57:57 | 2 | Illegal string offset 'allowmultisubmit' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 43
+<?php exit;?>06-13 14:57:57 | 2 | Illegal string offset 'allowmultisubmit' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 44
+<?php exit;?>06-13 14:57:57 | 2 | Illegal string offset 'allowunreg' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 48
+<?php exit;?>06-13 14:57:57 | 2 | Illegal string offset 'allowunreg' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 49
+<?php exit;?>06-13 15:38:19 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 15:38:19 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 15:47:39 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 15:47:39 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 17:06:16 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 17:06:25 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 17:09:09 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 17:09:15 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 17:09:55 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 17:10:15 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 18:06:05 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 18:06:14 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 18:06:43 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-13 18:06:53 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84

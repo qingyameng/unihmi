@@ -4,26 +4,18 @@
 <div id="FocusBG">
 <div class="fullSlide">
   <div class="bd">
-<ul>
-  <li style='background-image: url(<?php echo IMG_PATH;?>home/banner1.jpg); width: 1900px;'>
-    <a href='http://www.nodka.com/Product/PCMonitor/' target='_blank'></a>
-  </li>
-    <li style='background-image: url(<?php echo IMG_PATH;?>home/banner2.jpg); width: 1900px;'>
-      <a href='http://www.nodka.com/Product/PCMonitor/Monitor/' target='_blank'></a>
+  <ul>
+  <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=3f030ac46fe7d549f49b349aba8bc7de&sql=SELECT+setting+FROM+u_poster+WHERE+spaceid+%3D+1+ORDER+BY+listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT setting FROM u_poster WHERE spaceid = 1 ORDER BY listorder ASC LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?> 
+  <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+  <?php 
+    $narry = string2array($r[setting]); 
+   ?>
+    <li style='background-image: url(<?php echo $narry['1']['imageurl'];?>); width: 1900px;'>
+      <a href='<?php echo $narry['1']['linkurl'];?>' target='_blank'></a>
     </li>
-    <li style='background-image: url(<?php echo IMG_PATH;?>home/banner3.jpg); width: 1900px;'>
-      <a href='http://www.nodka.com/Product/PCMonitor/PanelPC/' target='_blank'></a>
-    </li>
-    <li style='background-image: url(<?php echo IMG_PATH;?>home/banner4.jpg); width: 1900px;'>
-      <a href='http://www.nodka.com/Product/PCMonitor/PanelPC/' target='_blank'></a>
-    </li>
-    <li style='background-image: url(<?php echo IMG_PATH;?>home/banner1.jpg); width: 1900px;'>
-      <a href='http://www.nodka.com/Product/7856431949.html' target='_blank'></a>
-    </li>
-    <li style='background-image: url(<?php echo IMG_PATH;?>home/banner2.jpg); width: 1900px;'>
-      <a href='http://www.nodka.com/html/196804812.html' target='_blank'></a>
-    </li>
-</ul>
+  <?php $n++;}unset($n); ?> 
+  <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+  </ul>
 </div>
 <span class="prev"></span> <span class="next"></span>
 </div>
@@ -57,145 +49,50 @@ jQuery(".fullSlide").slide({
 <div id="body">
 <div class="HeightTab clearfix"></div>
 <div class="MainBlock">
-  <div class='ItemBlock'>
-    <a href='Product/PCMonitor' class='rs' >
-      <div class='link' style='background:#f39700;'></div>
-      <div class='biaoti' style='background-image: url(<?php echo IMG_PATH;?>home/index_3_1.png); color: #f39700;'>
-        <ul>
-          <li><span style='font-family: 宋体;'>&gt;&gt;</span> 工业显示及系统产品</li>
-        </ul>
+
+    <?php $i=0;?>
+    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=f924043dcbaf69335a4aa91a1fd8edf7&action=category&catid=11&num=5&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'11','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'5',));}?>
+    <?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
+      <?php $i++;?>
+      <?php if($i=='1') $color='f39700';?> 
+      <?php if($i=='2') $color='005bac';?> 
+      <?php if($i=='3') $color='6eba2c';?> 
+      <?php if($i=='4') $color='005bac';?> 
+      <?php if($i=='5') $color='e4007f';?> 
+      <div class='ItemBlock'>
+        <a href='<?php echo $r['url'];?>' class='rs' >
+          <div class='link' style='background:#<?php echo $color;?>;'></div>
+          <div class='biaoti' style='background-image: url(<?php echo IMG_PATH;?>home/index_3_1.png); color: #<?php echo $color;?>;overflow: hidden;'>
+            <ul>
+              <li title="<?php echo $r['catname'];?>"><span style='font-family: 宋体;'>&gt;&gt;</span> <?php echo $r['catname'];?></li>
+            </ul>
+          </div>
+          <div class='ItemImg'>
+            <img src='<?php echo $r['image'];?>' />
+          </div>
+        </a>
+        <div style='height:10px;'></div>
+        <div class='liebiao'>
+          <ul>
+            <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=d3f6258312dedc3cb11d7ddb33a97535&action=category&catid=%24k&num=8&siteid=%24siteid&order=listorder+ASC&return=dat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$dat = $content_tag->category(array('catid'=>$k,'siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'8',));}?>
+            <?php $n=1;if(is_array($dat)) foreach($dat AS $v) { ?>
+            <li title="<?php echo $v['catname'];?>">
+              <a href='<?php echo $v['url'];?>' target='_blank'>
+                <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> <?php echo $v['catname'];?>
+              </a>
+            </li>
+            <?php $n++;}unset($n); ?>
+            <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
+          </ul>
+        </div>
       </div>
-      <div class='ItemImg'>
-        <img src='<?php echo IMG_PATH;?>home/index_2_1.jpg' />
-      </div>
-    </a>
-    <div style='height:10px;'></div>
-    <div class='liebiao'>
-      <ul>
-        <li>
-          <a href='/Product/PCMonitor/PanelPC' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> 工业平板电脑
-          </a>
-        </li>
-        <li>
-          <a href='/Product/PCMonitor/Monitor' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> 工业显示器
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class='ItemInner'></div>
-  <div class='ItemBlock'>
-    <a href='Product/Embedded' class='rs' >
-      <div class='link' style='background:#005bac;'></div>
-      <div class='biaoti' style='background-image: url(<?php echo IMG_PATH;?>home/index_3_2.png); color: #005bac;'>
-        <ul>
-          <li><span style='font-family: 宋体;'>&gt;&gt;</span> 工业嵌入式计算机</li>
-        </ul>
-      </div>
-      <div class='ItemImg'>
-        <img src='<?php echo IMG_PATH;?>home/index_2_2.jpg' />
-      </div>
-    </a>
-    <div style='height:10px;'></div>
-    <div class='liebiao'>
-      <ul>
-        <li>
-          <a href='/Product/Embedded/Boxpc' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> 无风扇Boxpc
-          </a>
-        </li>
-        <li>
-          <a href='/Product/Embedded/IPC' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> 第三代无风扇工控机
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class='ItemInner'></div>
-  <div class='ItemBlock'>
-    <a href='Product/Industry' class='rs' >
-      <div class='link' style='background:#6eba2c;'></div>
-      <div class='biaoti' style='background-image: url(<?php echo IMG_PATH;?>home/index_3_3.png); color: #6eba2c;'>
-        <ul>
-          <li>
-            <span style='font-family: 宋体;'>&gt;&gt;</span> 行业专用计算机
-          </li>
-        </ul>
-      </div>
-      <div class='ItemImg'>
-        <img src='<?php echo IMG_PATH;?>home/index_2_3.jpg' />
-      </div>
-    </a>
-    <div style='height:10px;'></div>
-    <div class='liebiao'>
-      <ul>
-        <li>
-          <a href='/Product/Industry/RailTransit' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> 轨道交通
-          </a>
-        </li>
-        <li>
-          <a href='/Product/Industry/CNCequipment' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> 运动控制
-          </a>
-        </li>
-        <li>
-          <a href='/Product/Industry/ShipandCarPC' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> 船舶和车载电脑
-          </a>
-        </li>
-        <li>
-          <a href='/Product/Industry/MachineVision' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> 机器视觉
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class='ItemInner'></div>
-  <div class='ItemBlock'>
-    <a href='Product/OEMODM' class='rs' >
-      <div class='link' style='background:#e4007f;'></div>
-      <div class='biaoti' style='background-image: url(<?php echo IMG_PATH;?>home/index_3_4.png); color: #e4007f;'>
-        <ul>
-          <li>
-            <span style='font-family: 宋体;'>&gt;&gt;</span> OEM/ODM客制化服务
-          </li>
-        </ul>
-      </div>
-      <div class='ItemImg'>
-        <img src='<?php echo IMG_PATH;?>home/index_2_4.jpg' />
-      </div>
-    </a>
-    <div style='height:10px;'></div>
-    <div class='liebiao'>
-      <ul>
-        <li>
-          <a href='/Product/OEMODM' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> OEM/ODM服务领域
-          </a>
-        </li>
-        <li>
-          <a href='/Product/OEMODM' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> OEM/ODM关键要素
-          </a>
-        </li>
-        <li>
-          <a href='/Product/OEMODM' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> OEM/ODM服务流程
-          </a>
-        </li>
-        <li>
-          <a href='/Product/OEMODM' target='_blank'>
-            <img src='<?php echo IMG_PATH;?>home/index_jt.png' /> OEM/ODM成功案例
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+      <?php if($i<5) { ?>
+      <div class='ItemInner'></div>
+      <?php } ?>
+    <?php $n++;}unset($n); ?>
+    <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
 </div>
 <div class="HeightTab clearfix"></div>
 </div>
@@ -209,7 +106,7 @@ jQuery(".fullSlide").slide({
           <span style="font-family: 宋体;">&gt;&gt;</span> 新闻活动
         </div>
         <div class="More"> 
-          <a  href='/News'>更多 
+          <a  href='/ZH/News/CompanyNews/'>更多 
             <span style="font-family: 宋体;">&gt;&gt;</span>
           </a>
         </div>
@@ -217,56 +114,54 @@ jQuery(".fullSlide").slide({
       <div class="HeightTab clearfix"></div>
       <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0">
         <ul>
+          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=bb5c1f884a714af7cc4dbe5468a9ecc5&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D9+order+by+id+DESC&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=9 order by id DESC LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+          <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
           <tr>
             <td width='75%'>
               <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href='/html/2564035155.html' target='_blank' title='诺达佳诚邀您共赏第18届中国国际工业博览会'>诺达佳诚邀您共赏第18届中国国际工
+              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>">
+                <?php echo mb_substr($r['title'],0,18);?>
               </a>
             </td>
             <td width='25%' align='right'>
-              <span>2016/12/08</span>
+              <span><?php echo date('Y/m/d',$r['updatetime']);?></span>
             </td>
           </tr>
           <tr>
             <td colspan='2' style='padding-left:20px; border-bottom:1px solid #b1b1b1; padding-bottom: 6px;'>
-              <a href='/html/2564035155.html' target='_blank' title='诺达佳诚邀您共赏第18届中国国际工业博览会' style='color:#666666'>
-      	  &nbsp; &nbsp; 第18届中国国际工业博览会将于11月1日在上海国家会展中心盛大开幕，工博会每年举办一次......
+              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>" style='color:#666666'>
+          &nbsp; &nbsp; 
+          <?php if(mb_strlen($r['description'])>48) { ?>
+          <?php echo mb_substr($r['description'],0,48);?>......
+          <?php } else { ?>
+          <?php echo $r['description'];?>
+          <?php } ?>
              </a>
             </td>
           </tr>
+          <?php $n++;}unset($n); ?>
+          <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
           <tr>
             <td height='5' colspan='2'>
           </tr>
+
+          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=0092cb9b35b4321e9213555514993599&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D9+order+by+id+DESC&start=1&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=9 order by id DESC LIMIT 1,3");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+          <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
           <tr>
             <td width='75%'>
               <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href='/html/1765295020.html' target='_blank' title='热烈庆祝北京诺达佳自动化技术有限公司成立'>热烈庆祝北京诺达佳自动化技术有限公
+              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>">
+                <?php echo mb_substr($r['title'],0,18);?>
               </a>
             </td>
             <td width='25%' align='right'>
-              <span>2016/12/08</span>
+              <span><?php echo date('Y/m/d',$r['updatetime']);?></span>
             </td>
           </tr>
-          <tr>
-            <td width='75%'>
-              <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href='/html/1382453450.html' target='_blank' title='诺达佳全体同仁恭祝大家中秋快乐'>诺达佳全体同仁恭祝大家中秋快乐
-              </a>
-            </td>
-            <td width='25%' align='right'>
-              <span>2016/09/14</span>
-            </td>
-          </tr>
-          <tr>
-            <td width='75%'>
-              <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href='/html/2857304339.html' target='_blank' title='诺达佳再次应邀参加售货机及自助展'>诺达佳再次应邀参加售货机及自助展
-              </a>
-            </td>
-            <td width='25%' align='right'>
-              <span>2016/08/03</span>
-            </td>
-          </tr>
+          <?php $n++;}unset($n); ?>
+          <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+          
         </ul>
       </table>
     </div>
@@ -277,7 +172,7 @@ jQuery(".fullSlide").slide({
           <span style="font-family: 宋体;">&gt;&gt;</span> 解决方案
         </div>
         <div class="More"> 
-          <a  href='/Solutions'>更多 
+          <a  href='/ZH/Solutions/'>更多 
             <span style="font-family: 宋体;">&gt;&gt;
             </span>
           </a>
@@ -286,56 +181,54 @@ jQuery(".fullSlide").slide({
       <div class="HeightTab clearfix"></div>
       <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0">
         <ul>
+          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=fd07e9b9f80bb05e565926fcbc479c47&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D20+order+by+id+DESC&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=20 order by id DESC LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+          <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
           <tr>
             <td width='75%'>
               <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href='/Solutions/0361781823.html' target='_blank' title='工业平板电脑在水闸泵站监控系统中的应用'>工业平板电脑在水闸泵站监控系统中的
+              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>">
+                <?php echo mb_substr($r['title'],0,18);?>
               </a>
             </td>
             <td width='25%' align='right'>
-              <span>2014/03/04</span>
+              <span><?php echo date('Y/m/d',$r['updatetime']);?></span>
             </td>
           </tr>
           <tr>
             <td colspan='2' style='padding-left:20px; border-bottom:1px solid #b1b1b1; padding-bottom: 6px;'>
-              <a href='/Solutions/0361781823.html' target='_blank' title='工业平板电脑在水闸泵站监控系统中的应用' style='color:#666666'>
-                使用产品：TPC6000-8170T 
-                国家/城市：广东
-                更新日期：2011-10-23
-			        </a>
+              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>" style='color:#666666'>
+          &nbsp; &nbsp; 
+          <?php if(mb_strlen($r['description'])>48) { ?>
+          <?php echo mb_substr($r['description'],0,48);?>......
+          <?php } else { ?>
+          <?php echo $r['description'];?>
+          <?php } ?>
+             </a>
             </td>
           </tr>
-          <tr><td height='5' colspan='2'></tr>
+          <?php $n++;}unset($n); ?>
+          <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
+          <tr>
+            <td height='5' colspan='2'>
+          </tr>
+
+          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=66be2069f60dadf3671c53a1ccf6c10b&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D20+order+by+id+DESC&start=1&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=20 order by id DESC LIMIT 1,3");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+          <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
           <tr>
             <td width='75%'>
               <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href='/Solutions/2098511343.html' target='_blank' title='工业平板电脑在环保行业的应用'>工业平板电脑在环保行业的应用
+              <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>">
+                <?php echo mb_substr($r['title'],0,18);?>
               </a>
             </td>
             <td width='25%' align='right'>
-              <span>2014/03/04</span>
+              <span><?php echo date('Y/m/d',$r['updatetime']);?></span>
             </td>
           </tr>
-          <tr>
-            <td width='75%'>
-              <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href='/Solutions/6829741241.html' target='_blank' title='工业平板电脑在电气火灾监控系统中的应用'>工业平板电脑在电气火灾监控系统中的
-              </a>
-            </td>
-            <td width='25%' align='right'>
-              <span>2014/03/04</span>
-            </td>
-          </tr>
-          <tr>
-            <td width='75%'>
-              <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
-              <a href='/Solutions/6379204913.html' target='_blank' title='工业平板电脑在船舶电气自动化控制设备上的运用 '>工业平板电脑在船舶电气自动化控制设
-              </a>
-            </td>
-            <td width='25%' align='right'>
-              <span>2013/12/25</span>
-            </td>
-          </tr>
+          <?php $n++;}unset($n); ?>
+          <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
         </ul>
       </table>
     </div>
@@ -346,31 +239,31 @@ jQuery(".fullSlide").slide({
           <td height="21"></td>
         </tr>
         <tr>
-          <td><a href="/service/FeedBack/"><img src="<?php echo IMG_PATH;?>home/index_01.jpg" border="0"></a></td>
+          <td><a href="/ZH/Service/OrderProducts/"><img src="<?php echo IMG_PATH;?>home/index_01.jpg" border="0"></a></td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/service/FeedBack/"><img src="<?php echo IMG_PATH;?>home/index_03.jpg" border="0" /></a></td>
+          <td><a href="/ZH/Service/FeedBack/"><img src="<?php echo IMG_PATH;?>home/index_03.jpg" border="0" /></a></td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/service/service1/"><img src="<?php echo IMG_PATH;?>home/index_05.jpg" border="0" /></a></td>
+          <td><a href="/ZH/Service/AfterSale/"><img src="<?php echo IMG_PATH;?>home/index_05.jpg" border="0" /></a></td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/service/productinformation/Catalog/"><img src="<?php echo IMG_PATH;?>home/index_07.jpg" border="0" /></a></td>
+          <td><a href="/ZH/Service/PF/Catalog/"><img src="<?php echo IMG_PATH;?>home/index_07.jpg" border="0" /></a></td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/service/productinformation/Journal/"><img src="<?php echo IMG_PATH;?>home/index_09.jpg" border="0" /></a></td>
+          <td><a href="/ZH/Service/PF/Journal/"><img src="<?php echo IMG_PATH;?>home/index_09.jpg" border="0" /></a></td>
         </tr>
       </table>
     </div>

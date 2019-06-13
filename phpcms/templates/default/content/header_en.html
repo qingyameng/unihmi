@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link href="{CSS_PATH}home/style_en.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}home/common_en.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{JS_PATH}home/jquery.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}home/Functions.js"></script>
+<script type="text/javascript" src="{JS_PATH}home/FocusSlide.js"></script>
+<script type="text/javascript" src="{JS_PATH}home/iepngfix_tilebg.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<!--head start-->
+<div id="head">
+<!--top start -->
+<div class="top" style="background:url({IMG_PATH}home/index_top_b.gif) repeat-x;">
+<div class="TopLogo">
+<div class="logo"><a href="/"><img src="{IMG_PATH}home/logo.png" alt="{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}" border="0"></a></div>
+<div class="link"><div class="search"><table border="0" cellpadding="0" cellspacing="0">
+    <form method="get" action="/Search/index.asp">
+  <tr>
+    <td><input type="text" name="q" id="search-text" class="searchTxt" size="15" onBlur="if(this.value=='') this.value='Please input keywords';" 
+onfocus="if(this.value=='Please input keywords') this.value='';" value="Please input keywords" /></td>
+    <td><input name="Submit" type="image" value="提交" src="{IMG_PATH}home/searchBtn.jpg" align="absmiddle"/></td>
+  </tr></form>
+</table>
+  </div><div class="Language"><a href="http://www.unihmi.com/"><img src="{IMG_PATH}home/china.gif" /> 中文版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.unihmi.com/EN/"><img src="{IMG_PATH}home/English.gif" /> ENGLISH</a></div>
+  </div>
+<div class="tel">
+<!--nav start-->
+<div id="NavLink">
+<div class="NavBG">
+<!--Head Menu Start-->
+<ul id='sddm'>
+  <li class='CurrentLi'><a href='/'>HOME</a></li>
+    {php $i=1;}
+    {pc:content action="category" catid="22" num="6" siteid="$siteid" order="listorder ASC"}
+    {loop $data $k $r}
+
+    <li>
+        {php $i++;}
+        {if $i<=5}
+        {php if($k=='16') $url='/ZH/About/Introduction/';} 
+        {php if($k=='8')  $url='/ZH/News/CompanyNews/';} 
+        {php if($k=='11') $url='/ZH/Product/PCMonitor/';} 
+        {php if($k=='19') $url='/ZH/Service/AfterSale/';} 
+        <a href='{$url}' onmouseover=mopen('m{$i}') onmouseout='mclosetime()'>{$r[catname]}</a>
+        {else}
+        <a href='{$r[url]}'>{$r[catname]}</a>
+        {/if}
+
+        {pc:content action="category" catid="$k" num="8" siteid="$siteid" order="listorder ASC" return="dat"}
+            {php $left=75;}
+            {php if($k=='8') $left=175;} 
+            {php if($k=='11') $left=275;} 
+            {php if($k=='19') $left=375;} 
+            <div id='m{$i}' onmouseover='mcancelclosetime()' onmouseout='mclosetime()' style='left: {$left}px;'>
+            {loop $dat $v}
+            <a href='{$v[url]}'>{$v[catname]}</a> 
+            {/loop}
+            </div>
+        {/pc}
+
+    </li>
+
+    {/loop}
+    {/pc}
+
+
+</ul>
+<!--Head Menu End-->
+</div>
+<div class="clearfix"></div>
+</div>
+<!--nav end-->
+</div>
+</div>
+</div>
+<!--top end-->

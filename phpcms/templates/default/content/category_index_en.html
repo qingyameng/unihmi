@@ -1,0 +1,274 @@
+{template "content","header_en"}
+
+<!--focus start-->
+<div id="FocusBG">
+<div class="fullSlide">
+  <div class="bd">
+  <ul>
+  {pc:get sql="SELECT setting FROM u_poster WHERE spaceid = 11 ORDER BY listorder ASC"} 
+  {loop $data $r}
+  <?php 
+    $narry = string2array($r[setting]); 
+   ?>
+    <li style='background-image: url({$narry[1][imageurl]}); width: 1900px;'>
+      <a href='{$narry[1][linkurl]}' target='_blank'></a>
+    </li>
+  {/loop} 
+  {/pc}
+  </ul>
+</div>
+<span class="prev"></span> <span class="next"></span>
+</div>
+<script type="text/javascript">
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+</div>
+<!--foncus end-->
+</div>
+<!--head end-->
+<!--body start-->
+<div id="body">
+<div class="HeightTab clearfix"></div>
+<div class="MainBlock">
+
+    {php $i=0;}
+    {pc:content action="category" catid="25" num="5" siteid="$siteid" order="listorder ASC"}
+    {loop $data $k $r}
+      {php $i++;}
+      {php if($i=='1') $color='f39700';} 
+      {php if($i=='2') $color='005bac';} 
+      {php if($i=='3') $color='6eba2c';} 
+      {php if($i=='4') $color='005bac';} 
+      {php if($i=='5') $color='e4007f';} 
+      <div class='ItemBlock'>
+        <a href='{$r[url]}' class='rs' >
+          <div class='link' style='background:#{$color};'></div>
+          <div class='biaoti' style='background-image: url({IMG_PATH}home/index_3_1.png); color: #{$color};overflow: hidden;'>
+            <ul>
+              <li title="{$r[catname]}"><span style='font-family: 宋体;'>&gt;&gt;</span> {$r[catname]}</li>
+            </ul>
+          </div>
+          <div class='ItemImg'>
+            <img src='{$r[image]}' />
+          </div>
+        </a>
+        <div style='height:10px;'></div>
+        <div class='liebiao'>
+          <ul>
+            {pc:content action="category" catid="$k" num="8" siteid="$siteid" order="listorder ASC" return="dat"}
+            {loop $dat $v}
+            <li title="{$v[catname]}">
+              <a href='{$v[url]}' target='_blank'>
+                <img src='{IMG_PATH}home/index_jt.png' /> {$v[catname]}
+              </a>
+            </li>
+            {/loop}
+            {/pc}
+
+          </ul>
+        </div>
+      </div>
+      {if $i<5}
+      <div class='ItemInner'></div>
+      {/if}
+    {/loop}
+    {/pc}
+
+</div>
+<div class="HeightTab clearfix"></div>
+</div>
+<!--body end-->
+<!--Middle start-->
+<div id="Middle">
+  <div class="Middle_bg" >
+    <div class="new1" >
+      <div class="nbt" >
+        <div class="text" >
+          <span style="font-family: 宋体;">&gt;&gt;</span> NEWS
+        </div>
+        <div class="More"> 
+          <a  href='/EN/News/CompanyNews/'>MORE 
+            <span style="font-family: 宋体;">&gt;&gt;</span>
+          </a>
+        </div>
+      </div>
+      <div class="HeightTab clearfix"></div>
+      <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <ul>
+          {pc:get sql="select title,description,url,updatetime from u_news where catid=34 order by id DESC" num="1"}
+          {loop $data $r}
+          <tr>
+            <td width='75%'>
+              <img src='{IMG_PATH}home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
+              <a href="{$r['url']}" target='_blank' title="{$r['title']}">
+                {substr($r['title'],0,26)}
+              </a>
+            </td>
+            <td width='25%' align='right'>
+              <span>{date('Y/m/d',$r['updatetime'])}</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan='2' style='padding-left:20px; border-bottom:1px solid #b1b1b1; padding-bottom: 6px;'>
+              <a href="{$r['url']}" target='_blank' title="{$r['title']}" style='color:#666666'>
+          &nbsp; &nbsp; 
+          {if strlen($r['description'])>60}
+          {substr($r['description'],0,60)}......
+          {else}
+          {$r['description']}
+          {/if}
+             </a>
+            </td>
+          </tr>
+          {/loop}
+          {/pc}
+
+          <tr>
+            <td height='5' colspan='2'>
+          </tr>
+
+          {pc:get sql="select title,description,url,updatetime from u_news where catid=34 order by id DESC" start="1" num="3"}
+          {loop $data $r}
+          <tr>
+            <td width='75%'>
+              <img src='{IMG_PATH}home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
+              <a href="{$r['url']}" target='_blank' title="{$r['title']}">
+                {substr($r['title'],0,26)}
+              </a>
+            </td>
+            <td width='25%' align='right'>
+              <span>{date('Y/m/d',$r['updatetime'])}</span>
+            </td>
+          </tr>
+          {/loop}
+          {/pc}
+          
+        </ul>
+      </table>
+    </div>
+    <div class="new2"></div>
+    <div class="new1" >
+      <div class="nbt" >
+        <div class="text" >
+          <span style="font-family: 宋体;">&gt;&gt;</span> SOLUTION
+        </div>
+        <div class="More"> 
+          <a  href='/EN/Solutions/'>MORE 
+            <span style="font-family: 宋体;">&gt;&gt;
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="HeightTab clearfix"></div>
+      <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <ul>
+          {pc:get sql="select title,description,url,updatetime from u_news where catid=27 order by id DESC" num="1"}
+          {loop $data $r}
+          <tr>
+            <td width='75%'>
+              <img src='{IMG_PATH}home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
+              <a href="{$r['url']}" target='_blank' title="{$r['title']}">
+                {substr($r['title'],0,26)}
+              </a>
+            </td>
+            <td width='25%' align='right'>
+              <span>{date('Y/m/d',$r['updatetime'])}</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan='2' style='padding-left:20px; border-bottom:1px solid #b1b1b1; padding-bottom: 6px;'>
+              <a href="{$r['url']}" target='_blank' title="{$r['title']}" style='color:#666666'>
+          &nbsp; &nbsp; 
+          {if strlen($r['description'])>60}
+          {substr($r['description'],0,60)}......
+          {else}
+          {$r['description']}
+          {/if}
+             </a>
+            </td>
+          </tr>
+          {/loop}
+          {/pc}
+
+          <tr>
+            <td height='5' colspan='2'>
+          </tr>
+
+          {pc:get sql="select title,description,url,updatetime from u_news where catid=27 order by id DESC" start="1" num="3"}
+          {loop $data $r}
+          <tr>
+            <td width='75%'>
+              <img src='{IMG_PATH}home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
+              <a href="{$r['url']}" target='_blank' title="{$r['title']}">
+                {substr($r['title'],0,26)}
+              </a>
+            </td>
+            <td width='25%' align='right'>
+              <span>{date('Y/m/d',$r['updatetime'])}</span>
+            </td>
+          </tr>
+          {/loop}
+          {/pc}
+
+        </ul>
+      </table>
+    </div>
+    <div class="new2"></div>
+    <div class="new3" >
+      <table width="244" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="21"></td>
+        </tr>
+        <tr>
+          <td><a href="/EN/Service/OrderProducts/"><img src="{IMG_PATH}home/index_en_01.jpg" border="0"></a></td>
+        </tr>
+        <tr>
+          <td height="5"></td>
+        </tr>
+        <tr>
+          <td><a href="/EN/Service/FeedBack/"><img src="{IMG_PATH}home/index_en_03.jpg" border="0" /></a></td>
+        </tr>
+        <tr>
+          <td height="5"></td>
+        </tr>
+        <tr>
+          <td><a href="/EN/Service/AfterSale/"><img src="{IMG_PATH}home/index_en_05.jpg" border="0" /></a></td>
+        </tr>
+        <tr>
+          <td height="5"></td>
+        </tr>
+        <tr>
+          <td><a href="/EN/Service/PF/Catalog/"><img src="{IMG_PATH}home/index_en_07.jpg" border="0" /></a></td>
+        </tr>
+        <tr>
+          <td height="5"></td>
+        </tr>
+        <tr>
+          <td><a href="/EN/Service/PF/Journal/"><img src="{IMG_PATH}home/index_en_09.jpg" border="0" /></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!--Middle end-->
+
+{template "content","footer_en"}

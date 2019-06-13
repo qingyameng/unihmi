@@ -19,7 +19,7 @@
 <!--top start -->
 <div class="top" style="background:url({IMG_PATH}home/index_top_b.gif) repeat-x;">
 <div class="TopLogo">
-<div class="logo"><a href="/"><img src="{IMG_PATH}home/201312161742.png" alt="{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}" border="0"></a></div>
+<div class="logo"><a href="/"><img src="{IMG_PATH}home/logo.png" alt="{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}" border="0"></a></div>
 <div class="link"><div class="search"><table border="0" cellpadding="0" cellspacing="0">
     <form method="get" action="/Search/index.asp">
   <tr>
@@ -44,7 +44,11 @@ onfocus="if(this.value=='请输入关键词') this.value='';" value="请输入�
     <li>
         {php $i++;}
         {if $i<=5}
-        <a href='{$r[url]}' onmouseover=mopen('m{$i}') onmouseout='mclosetime()'>{$r[catname]}</a>
+        {php if($k=='16') $url='/ZH/About/Introduction/';} 
+        {php if($k=='8')  $url='/ZH/News/CompanyNews/';} 
+        {php if($k=='11') $url='/ZH/Product/PCMonitor/';} 
+        {php if($k=='19') $url='/ZH/Service/AfterSale/';} 
+        <a href='{$url}' onmouseover=mopen('m{$i}') onmouseout='mclosetime()'>{$r[catname]}</a>
         {else}
         <a href='{$r[url]}'>{$r[catname]}</a>
         {/if}
