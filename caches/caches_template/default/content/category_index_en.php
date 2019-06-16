@@ -120,7 +120,7 @@ jQuery(".fullSlide").slide({
             <td width='75%'>
               <img src='<?php echo IMG_PATH;?>home/index_jt2.png' class="newsImg" />&nbsp;&nbsp;&nbsp;
               <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>" class="newsTitle">
-                <?php echo substr($r['title'],0,26);?>
+                <?php echo substr($r['title'],0,30);?>
               </a>
             </td>
             <td width='25%' align='right'>
@@ -131,8 +131,8 @@ jQuery(".fullSlide").slide({
             <td colspan='2' style='padding-left:20px; border-bottom:1px solid #b1b1b1; padding-bottom: 6px;'>
               <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>" class="newsDes">
           &nbsp; &nbsp; 
-          <?php if(strlen($r['description'])>60) { ?>
-          <?php echo substr($r['description'],0,60);?>......
+          <?php if(strlen($r['description'])>100) { ?>
+          <?php echo substr($r['description'],0,100);?>......
           <?php } else { ?>
           <?php echo $r['description'];?>
           <?php } ?>
@@ -152,7 +152,7 @@ jQuery(".fullSlide").slide({
             <td width='75%'>
               <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
               <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>">
-                <?php echo substr($r['title'],0,26);?>
+                <?php echo substr($r['title'],0,30);?>
               </a>
             </td>
             <td width='25%' align='right'>
@@ -187,7 +187,7 @@ jQuery(".fullSlide").slide({
             <td width='75%'>
               <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
               <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>">
-                <?php echo substr($r['title'],0,26);?>
+                <?php echo substr($r['title'],0,30);?>
               </a>
             </td>
             <td width='25%' align='right'>
@@ -198,8 +198,8 @@ jQuery(".fullSlide").slide({
             <td colspan='2' style='padding-left:20px; border-bottom:1px solid #b1b1b1; padding-bottom: 6px;'>
               <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>" style='color:#666666'>
           &nbsp; &nbsp; 
-          <?php if(strlen($r['description'])>60) { ?>
-          <?php echo substr($r['description'],0,60);?>......
+          <?php if(strlen($r['description'])>100) { ?>
+          <?php echo substr($r['description'],0,100);?>......
           <?php } else { ?>
           <?php echo $r['description'];?>
           <?php } ?>
@@ -219,7 +219,7 @@ jQuery(".fullSlide").slide({
             <td width='75%'>
               <img src='<?php echo IMG_PATH;?>home/index_jt2.png' />&nbsp;&nbsp;&nbsp;
               <a href="<?php echo $r['url'];?>" target='_blank' title="<?php echo $r['title'];?>">
-                <?php echo substr($r['title'],0,26);?>
+                <?php echo substr($r['title'],0,30);?>
               </a>
             </td>
             <td width='25%' align='right'>

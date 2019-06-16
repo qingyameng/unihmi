@@ -10,6 +10,76 @@
 	<div class="inner">
 
 
+	<!--left start-->
+	<div class="left">
+		<div class="Sbox">
+			<div class="kong"></div>
+
+			{php $ZHpar = '0,17';}
+
+				{pc:get sql="SELECT arrparentid FROM u_category WHERE catid=$catid" num="1" return="parCat"}
+				<?php 
+				$parCat_str1 = str_replace($ZHpar.',','',$parCat[0]['arrparentid']);
+				$parCat_str2 = str_replace($ZHpar,'',$parCat_str1);
+				?>
+					{if !empty($parCat_str2)}
+						<?php 
+						$dat = explode(',',$parCat_str2); 
+						$parCatid = $dat[0];
+						?>
+						{pc:get sql="SELECT catname,catdir FROM u_category WHERE catid=$parCatid" num='1'}
+							<div class="topic"> {$data[0]['catname']}
+								<span style="font-size: 13px;color: #999999;">{$data[0]['catdir']}</span>
+							</div>
+						{/pc}
+					{else}
+					<div class="topic"> {$catname} 
+						<span style="font-size: 13px;color: #999999;">{$catdir}</span>
+					</div>
+					{/if}
+				{/pc}
+
+		    <div class="blank">
+		    	<ul>
+		    		{if isset($parCatid) && !empty($parCatid) }
+			    		{php $arrPar = $ZHpar.','.$parCatid;}
+			    		{pc:get sql="SELECT catid,catname,url FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
+			    		{loop $data $v}
+							<li {if $v['catid']==$catid} class='current' {/if}>
+				    			<a href="{$v['url']}">{$v['catname']}</a>
+				    		</li> 
+						{/loop}
+			    		{/pc}
+		    		{/if}
+		    	</ul>
+		    </div>
+	    </div>
+        <div class="Sbox">
+        	<div class="kong2"></div>
+            <a href="/ZH/Service/OrderProducts/">
+              <img src="{IMG_PATH}home/left_01.jpg" border="0" />
+            </a>
+			<div class="HeightTab clearfix"></div>
+			<a href="/ZH/Service/FeedBack/">
+			  <img src="{IMG_PATH}home/left_03.jpg" border="0" />
+			</a>
+			<div class="HeightTab clearfix"></div>
+			<a href="/ZH/Service/AfterSale/">
+			  <img src="{IMG_PATH}home/left_05.jpg" border="0" />
+			</a>
+			<div class="HeightTab clearfix"></div>
+			<a href="/ZH/Service/PF/Catalog/">
+			  <img src="{IMG_PATH}home/left_07.jpg" border="0" />
+			</a>
+			<div class="HeightTab clearfix"></div>
+			<a href="/ZH/Service/PF/Journal/">
+			  <img src="{IMG_PATH}home/left_09.jpg" border="0" />
+			</a>
+		</div>
+	</div>
+	<!--left end-->
+
+
 
 	<!--right start-->
 	<div class="right">

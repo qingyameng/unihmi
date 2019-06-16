@@ -6,6 +6,7 @@
 <meta name="keywords" content="{$SEO['keyword']}">
 <meta name="description" content="{$SEO['description']}">
 <link href="{CSS_PATH}home/style_en.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}home/inner_en.css" rel="stylesheet" type="text/css" />
 <link href="{CSS_PATH}home/common_en.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="{JS_PATH}home/jquery.min.js"></script>
 <script type="text/javascript" src="{JS_PATH}home/Functions.js"></script>
@@ -36,7 +37,7 @@ onfocus="if(this.value=='Please input keywords') this.value='';" value="Please i
 <div class="NavBG">
 <!--Head Menu Start-->
 <ul id='sddm'>
-  <li class='CurrentLi'><a href='/'>HOME</a></li>
+  <li class='CurrentLi'><a href='/EN/'>HOME</a></li>
     {php $i=1;}
     {pc:content action="category" catid="22" num="6" siteid="$siteid" order="listorder ASC"}
     {loop $data $k $r}
@@ -44,10 +45,10 @@ onfocus="if(this.value=='Please input keywords') this.value='';" value="Please i
     <li>
         {php $i++;}
         {if $i<=5}
-        {php if($k=='16') $url='/ZH/About/Introduction/';} 
-        {php if($k=='8')  $url='/ZH/News/CompanyNews/';} 
-        {php if($k=='11') $url='/ZH/Product/PCMonitor/';} 
-        {php if($k=='19') $url='/ZH/Service/AfterSale/';} 
+        {php if($k=='23') $url='/EN/About/Introduction/';} 
+        {php if($k=='24')  $url='/EN/News/CompanyNews/';} 
+        {php if($k=='25') $url='/EN/Product/PCMonitor/';} 
+        {php if($k=='26') $url='/EN/Service/AfterSale/';} 
         <a href='{$url}' onmouseover=mopen('m{$i}') onmouseout='mclosetime()'>{$r[catname]}</a>
         {else}
         <a href='{$r[url]}'>{$r[catname]}</a>
@@ -55,9 +56,9 @@ onfocus="if(this.value=='Please input keywords') this.value='';" value="Please i
 
         {pc:content action="category" catid="$k" num="8" siteid="$siteid" order="listorder ASC" return="dat"}
             {php $left=75;}
-            {php if($k=='8') $left=175;} 
-            {php if($k=='11') $left=275;} 
-            {php if($k=='19') $left=375;} 
+            {php if($k=='24') $left=175;} 
+            {php if($k=='25') $left=275;} 
+            {php if($k=='26') $left=375;} 
             <div id='m{$i}' onmouseover='mcancelclosetime()' onmouseout='mclosetime()' style='left: {$left}px;'>
             {loop $dat $v}
             <a href='{$v[url]}'>{$v[catname]}</a> 
