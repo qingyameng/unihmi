@@ -1,0 +1,63 @@
+{template "content","header_en"}
+
+{template "content","left_header_en"}
+
+
+    <!--main start-->
+      <div class="main">
+
+        <div class="Art">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="33">&nbsp;</td>
+                  <td><a href="/EN/Service/PF/Catalog/"><img src="{IMG_PATH}home/xl.jpg" width="230" height="70" border="0" /></a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="/EN/Service/PF/Information/"><img src="{IMG_PATH}home/zl.jpg" width="230" height="70" border="0" /></a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="/EN/Service/PF/Journal/"><img src="{IMG_PATH}home/dz.jpg" width="230" height="70" border="0" /></a></td>
+                  <td width="33">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td colspan="5">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td height="30" colspan="5" class="xxian"><img src="{IMG_PATH}home/ljt.gif" /> <strong>{$catname}</strong></strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+            </table>
+            <div class="down-list">
+                <ul class="down-ul">
+
+                {pc:content action="lists" catid="$catid" num="16" order="id DESC" page="$page"}
+                {loop $data $r}
+                    <li>
+                        <a href="{$r[url]}">
+                            <img src="{$r[thumb]}">
+                            <div class="down-item-content">
+                                <div class="down-item-name">{$r[title]}</div>
+                            </div>
+                        </a>
+                    </li>
+                {/loop}
+                {/pc}
+
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class='t_page ColorLink'>
+            {$pages}
+            </div>
+        </div>
+
+      </div>
+
+
+        <!--main end-->
+
+
+{template "content","left_footer_en"}
+
+{template "content","footer_en"}

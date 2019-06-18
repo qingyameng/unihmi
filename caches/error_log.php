@@ -253,3 +253,30 @@
 <?php exit;?>06-17 00:51:26 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>06-17 00:51:58 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>06-17 00:52:53 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-17 21:01:12 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-17 21:04:57 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-17 22:14:06 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-17 23:11:18 | 2 | require(D:\wamp\www\unihmi\phpcms\modules\content\fields\\config.inc.php): failed to open stream: No such file or directory | phpcms\modules\content\sitemodel_field.php | 207
+<?php exit;?>06-17 23:11:57 | 2 | Invalid argument supplied for foreach() | phpcms\modules\content\fields\downfile\field_add_form.inc.php | 3
+<?php exit;?>06-17 23:33:05 | 2 | Invalid argument supplied for foreach() | phpcms\modules\content\fields\downfile\field_add_form.inc.php | 3
+<?php exit;?>06-17 23:33:07 | 2 | Invalid argument supplied for foreach() | phpcms\modules\content\fields\downfile\field_add_form.inc.php | 3
+<?php exit;?>06-17 23:37:17 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-17 23:37:17 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-18 00:04:34 | 2 | trim() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 290
+<?php exit;?>06-18 00:04:34 | 2 | trim() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 290
+<?php exit;?>06-18 00:07:07 | 2 | trim() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 290
+<?php exit;?>06-18 00:07:07 | 2 | json_decode() expects parameter 1 to be string, array given | caches\caches_template\default\content\show_prodown.php | 22
+<?php exit;?>06-18 00:08:20 | 2 | json_decode() expects parameter 1 to be string, array given | caches\caches_template\default\content\show_prodown.php | 22
+<?php exit;?>06-18 00:11:53 | 2 | trim() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 290
+<?php exit;?>06-18 00:11:53 | 2 | json_decode() expects parameter 1 to be string, array given | caches\caches_template\default\content\show_prodown.php | 22
+<?php exit;?>06-18 20:37:28 | 2 | json_decode() expects parameter 1 to be string, array given | caches\caches_template\default\content\show_prodown.php | 20
+<?php exit;?>06-18 20:38:29 | 2 | json_decode() expects parameter 1 to be string, array given | caches\caches_template\default\content\show_prodown.php | 20
+<?php exit;?>06-18 20:39:21 | 2 | json_decode() expects parameter 1 to be string, array given | caches\caches_template\default\content\show_prodown.php | 20
+<?php exit;?>06-18 20:47:08 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-18 20:47:08 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-18 21:01:31 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-18 21:01:31 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-18 21:04:57 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-18 21:37:35 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-18 22:26:34 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-18 22:30:18 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84

@@ -17,7 +17,7 @@
 
 			<?php $ZHpar = '0,22';?>
 
-				<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=1cee2f0eac6ba36d44ad0d79525184b7&sql=SELECT+arrparentid+FROM+u_category+WHERE+catid%3D%24catid&num=1&return=parCat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT arrparentid FROM u_category WHERE catid=$catid LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$parCat = $a;unset($a);?>
+				<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=4c976f1b64b76f77ea8b70f3b1b1377e&sql=SELECT+arrparentid%2Ccatname%2Ccatdir+FROM+u_category+WHERE+catid%3D%24catid&num=1&return=parCat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT arrparentid,catname,catdir FROM u_category WHERE catid=$catid LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$parCat = $a;unset($a);?>
 				<?php 
 				$parCat_str1 = str_replace($ZHpar.',','',$parCat[0]['arrparentid']);
 				$parCat_str2 = str_replace($ZHpar,'',$parCat_str1);
@@ -33,7 +33,7 @@
 							</div>
 						<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 					<?php } else { ?>
-					<div class="topic"> <?php echo $catname;?>
+					<div class="topic"> <?php echo $parCat['0']['catname'];?> 
 					</div>
 					<?php } ?>
 				<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
@@ -101,5 +101,13 @@
 					<?php } ?>
 				<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 				
-				<a href='<?php echo $url;?>'><?php echo $catname;?></a></span>
+				<?php if(!empty($catname)) { ?>
+					<a href='<?php echo $url;?>'><?php echo $catname;?></a></span>
+				<?php } else { ?>
+					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=9eb80e1f4dd1bee234468da5c8cc2abc&sql=SELECT+url%2Ccatname+FROM+u_category+WHERE+catid%3D%24catid&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT url,catname FROM u_category WHERE catid=$catid LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+						<?php if(isset($data[0]['catname'])) { ?>
+						<a href="<?php echo $data['0']['url'];?>"><?php echo $data['0']['catname'];?></a></span>
+						<?php } ?>
+					<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+				<?php } ?>
 		</div>

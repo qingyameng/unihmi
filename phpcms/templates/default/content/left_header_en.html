@@ -17,7 +17,7 @@
 
 			{php $ZHpar = '0,22';}
 
-				{pc:get sql="SELECT arrparentid FROM u_category WHERE catid=$catid" num="1" return="parCat"}
+				{pc:get sql="SELECT arrparentid,catname,catdir FROM u_category WHERE catid=$catid" num="1" return="parCat"}
 				<?php 
 				$parCat_str1 = str_replace($ZHpar.',','',$parCat[0]['arrparentid']);
 				$parCat_str2 = str_replace($ZHpar,'',$parCat_str1);
@@ -33,7 +33,7 @@
 							</div>
 						{/pc}
 					{else}
-					<div class="topic"> {$catname}
+					<div class="topic"> {$parCat[0]['catname']} 
 					</div>
 					{/if}
 				{/pc}
@@ -101,5 +101,13 @@
 					{/if}
 				{/pc}
 				
-				<a href='{$url}'>{$catname}</a></span>
+				{if !empty($catname)}
+					<a href='{$url}'>{$catname}</a></span>
+				{else}
+					{pc:get sql="SELECT url,catname FROM u_category WHERE catid=$catid" num="1"}
+						{if isset($data[0]['catname'])}
+						<a href="{$data[0]['url']}">{$data[0]['catname']}</a></span>
+						{/if}
+					{/pc}
+				{/if}
 		</div>

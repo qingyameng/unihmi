@@ -17,7 +17,7 @@
 
 			{php $ZHpar = '0,17';}
 
-				{pc:get sql="SELECT arrparentid FROM u_category WHERE catid=$catid" num="1" return="parCat"}
+				{pc:get sql="SELECT arrparentid,catname,catdir FROM u_category WHERE catid=$catid" num="1" return="parCat"}	
 				<?php 
 				$parCat_str1 = str_replace($ZHpar.',','',$parCat[0]['arrparentid']);
 				$parCat_str2 = str_replace($ZHpar,'',$parCat_str1);
@@ -33,20 +33,30 @@
 							</div>
 						{/pc}
 					{else}
-					<div class="topic"> {$catname} 
-						<span style="font-size: 13px;color: #999999;">{$catdir}</span>
+					<div class="topic"> {$parCat[0]['catname']} 
+						<span style="font-size: 13px;color: #999999;">{$parCat[0]['catdir']}</span>
 					</div>
 					{/if}
 				{/pc}
 
 		    <div class="blank">
 		    	<ul>
-		    		{if isset($parCatid) && !empty($parCatid) }
+		    		{if isset($parCatid) And !empty($parCatid) }
 			    		{php $arrPar = $ZHpar.','.$parCatid;}
-			    		{pc:get sql="SELECT catid,catname,url FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
+			    		{pc:get sql="SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
 			    		{loop $data $v}
 							<li {if $v['catid']==$catid} class='current' {/if}>
 				    			<a href="{$v['url']}">{$v['catname']}</a>
+				    			{if $v['child']==1}
+				    			{php $thisCatid = $v['catid'];}
+				    			{pc:get sql="SELECT catname,url FROM u_category WHERE parentid='$thisCatid' ORDER BY listorder ASC" num="8" return="dat"}
+				    			<ul>
+				    			{loop $dat $r}
+				    			<li><a href="{$r['url']}">{$r['catname']}</a></li> 
+				    			{/loop}			    			
+				    			</ul>
+				    			{/pc}	
+				    			{/if}
 				    		</li> 
 						{/loop}
 			    		{/pc}
@@ -101,6 +111,15 @@
 						{/loop}
 					{/if}
 				{/pc}
-				
-				<a href='{$url}'>{$catname}</a></span>
+
+				{if !empty($catname)}
+					<a href='{$url}'>{$catname}</a></span>
+				{else}
+					{pc:get sql="SELECT url,catname FROM u_category WHERE catid=$catid" num="1"}
+						{if isset($data[0]['catname'])}
+						<a href="{$data[0]['url']}">{$data[0]['catname']}</a></span>
+						{/if}
+					{/pc}
+				{/if}
+
 		</div>

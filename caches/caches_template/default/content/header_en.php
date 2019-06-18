@@ -8,6 +8,7 @@
 <link href="<?php echo CSS_PATH;?>home/style_en.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo CSS_PATH;?>home/inner_en.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo CSS_PATH;?>home/common_en.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo CSS_PATH;?>home/verify.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?php echo JS_PATH;?>home/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo JS_PATH;?>home/Functions.js"></script>
 <script type="text/javascript" src="<?php echo JS_PATH;?>home/FocusSlide.js"></script>

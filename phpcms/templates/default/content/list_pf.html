@@ -2,8 +2,6 @@
 
 {template "content","left_header"}
 
-<link href="{CSS_PATH}home/verify.css" rel="stylesheet" type="text/css" />
-
 
     <!--main start-->
       <div class="main">
@@ -33,7 +31,7 @@
             <div class="down-list">
                 <ul class="down-ul">
 
-                {pc:content action="lists" catid="$catid" num="25" order="id DESC" page="$page"}
+                {pc:content action="lists" catid="$catid" num="16" order="id DESC" page="$page"}
                 {loop $data $r}
                     <li>
                         <a href="{$r[url]}">

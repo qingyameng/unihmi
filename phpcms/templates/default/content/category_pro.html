@@ -1,0 +1,36 @@
+{template "content","header"}
+
+{template "content","left_header"}
+
+
+<!--main start-->
+<div class="main">
+
+<!--content start-->
+<div class="content">
+<div class="MorePro">
+<div class="CaseBlock">
+<ul>
+
+{pc:content action="category" catid="$catid" num="25" siteid="$siteid" order="listorder ASC"}
+{loop $data $r}
+    <div class="albumblock"><div class="inner"><a href="{$r[url]}" title="{$r[catname]}"><img src="{$r[image]}"></a></div><div class="title"><a href="{$r[url]}">{$r[catname]}</a></div><div class="content">{$r[description]}</div></div><div class="kong"><div style="border-bottom: 1px dotted #999999; height:25px;"></div></div>
+{/loop}
+{/pc}
+
+</ul>
+</div>
+<div class="clearfix"></div>
+
+</div>
+
+</div>
+<!--content end-->
+
+</div>
+<!--main end-->
+
+
+{template "content","left_footer"}
+
+{template "content","footer"}

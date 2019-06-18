@@ -300,6 +300,88 @@ return array (
     'images_width' => '',
     'images_height' => '',
   ),
+  'systems' => 
+  array (
+    'fieldid' => '44',
+    'modelid' => '2',
+    'siteid' => '1',
+    'field' => 'systems',
+    'name' => '软件平台',
+    'tips' => '<select name=\'selectSystem\' onchange="ChangeInput(this,document.myform.systems,\'/\')">
+	<option value=\'WinXP\'>WinXP</option>
+	<option value=\'Vista\'>Windows 7</option>
+	<option value=\'Win2000\'>Win2000</option>
+	<option value=\'Win2003\'>Win2003</option>
+	<option value=\'Unix\'>Unix</option>
+	<option value=\'Linux\'>Linux</option>
+	<option value=\'MacOS\'>MacOS</option>
+</select>',
+    'css' => '',
+    'minlength' => '0',
+    'maxlength' => '100',
+    'pattern' => '',
+    'errortips' => '',
+    'formtype' => 'text',
+    'setting' => 'array (
+  \'size\' => \'50\',
+  \'defaultvalue\' => \'Win2000/WinXP/Win2003\',
+  \'ispassword\' => \'0\',
+)',
+    'formattribute' => '',
+    'unsetgroupids' => '',
+    'unsetroleids' => '',
+    'iscore' => '0',
+    'issystem' => '1',
+    'isunique' => '0',
+    'isbase' => '1',
+    'issearch' => '0',
+    'isadd' => '1',
+    'isfulltext' => '1',
+    'isposition' => '0',
+    'listorder' => '14',
+    'disabled' => '0',
+    'isomnipotent' => '0',
+    'size' => '50',
+    'defaultvalue' => 'Win2000/WinXP/Win2003',
+    'ispassword' => '0',
+  ),
+  'filesize' => 
+  array (
+    'fieldid' => '49',
+    'modelid' => '2',
+    'siteid' => '1',
+    'field' => 'filesize',
+    'name' => '文件大小',
+    'tips' => '',
+    'css' => '',
+    'minlength' => '0',
+    'maxlength' => '10',
+    'pattern' => '',
+    'errortips' => '',
+    'formtype' => 'text',
+    'setting' => 'array (
+  \'size\' => \'10\',
+  \'defaultvalue\' => \'未知\',
+  \'ispassword\' => \'0\',
+)',
+    'formattribute' => '',
+    'unsetgroupids' => '',
+    'unsetroleids' => '',
+    'iscore' => '0',
+    'issystem' => '1',
+    'isunique' => '0',
+    'isbase' => '0',
+    'issearch' => '0',
+    'isadd' => '1',
+    'isfulltext' => '1',
+    'isposition' => '0',
+    'listorder' => '14',
+    'disabled' => '0',
+    'isomnipotent' => '0',
+    'size' => '10',
+    'defaultvalue' => '未知',
+    'ispassword' => '0',
+  ),
   'relation' => 
   array (
     'fieldid' => '30',

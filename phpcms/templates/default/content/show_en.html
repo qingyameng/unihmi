@@ -1,0 +1,51 @@
+{template "content","header_en"}
+
+{template "content","left_header_en"}
+
+
+      <!--main start-->
+      <div class="main">
+
+        <!--content start-->
+        <div class="content">
+            <div class="title"><h3>{$title}</h3></div>
+            <div class="infos">{$inputtime}  Page View：<span id="hits"></span></div>
+            <div class="maincontent clearfix">
+                {$content}
+            </div>
+
+
+          <div class="prenext">
+            <ul>
+                <li>
+                    The previous article：
+                    {if $previous_page[title]=="第一页"} 
+                        First page 
+                    {else}
+                        <a href="{$previous_page[url]}" target='_blank' title='{$previous_page[title]}'>{$previous_page[title]}</a>
+                    {/if}
+                </li>
+                <li>
+                    The next article：
+                    {if $next_page[title]=="最后一页"} 
+                        Last page 
+                    {else}
+                        <a href="{$next_page[url]}" target='_blank' title='{$next_page[title]}'>{$next_page[title]}</a>
+                    {/if}
+                </li>
+            </ul>
+          </div>
+
+         
+        </div>
+        <!--content end-->
+
+        </div>
+
+        <!--main end-->
+
+<script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+
+{template "content","left_footer_en"}
+
+{template "content","footer_en"}

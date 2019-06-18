@@ -1,0 +1,64 @@
+{template "content","header"}
+
+{template "content","left_header"}
+
+
+      <!--main start-->
+      <div class="main">
+
+        <!--content start-->
+        <div class="content">
+            <div class="title"><h3>{$title}</h3></div>
+            <div class="infos">{$inputtime}  点击：<span id="hits"></span></div>
+            <div class="maincontent clearfix">
+                {$content}
+            </div>
+
+            <div class="download ColorLink"><b>文件下载：</b>
+
+                {pc:get sql="select downfiles from u_download_data where id=$id" num="1"}
+                {php $df_arr = json_decode($data[0]['downfiles'],true); }
+                {if isset($df_arr[0]['filename'])}
+                    <?php $down_arr = explode('.',$df_arr[0]['fileurl']); 
+                    $down_len = count($down_arr)-1; ?>
+                <a href="{$df_arr[0]['fileurl']}" target="_blank" download="{$df_arr[0]['filename']}.{$down_arr[$down_len]}">{$df_arr[0]['filename']}</a>
+                <span class="ListDate">(点击即可下载)</span>
+                {/if}
+                {/pc}            
+            
+            </div>
+
+          <div class="prenext">
+            <ul>
+                <li>
+                    上一篇：
+                    {if $previous_page[title]=="第一页"} 
+                        第一页
+                    {else}
+                        <a href="{$previous_page[url]}" target='_blank' title='{$previous_page[title]}'>{$previous_page[title]}</a>
+                    {/if}
+                </li>
+                <li>
+                    下一篇：
+                    {if $next_page[title]=="最后一页"} 
+                        最后一页 
+                    {else}
+                        <a href="{$next_page[url]}" target='_blank' title='{$next_page[title]}'>{$next_page[title]}</a>
+                    {/if}
+                </li>
+            </ul>
+          </div>
+
+         
+        </div>
+        <!--content end-->
+
+        </div>
+
+        <!--main end-->
+
+<script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+
+{template "content","left_footer"}
+
+{template "content","footer"}
