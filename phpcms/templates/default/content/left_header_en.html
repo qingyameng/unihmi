@@ -38,11 +38,39 @@
 					{/if}
 				{/pc}
 
+		    {if $parCat[0]['catid']==25 OR $data[0]['catid']==25}
+		    <div class="ClassNav">
+		    	<div class="NavTree">
+		    	<ul>
+		    		{if isset($parCatid) And !empty($parCatid) }
+			    		{php $arrPar = $ZHpar.','.$parCatid;}
+			    		{pc:get sql="SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
+			    		{loop $data $v}
+							<li {if $v['catid']==$catid} class='current' {/if}>
+				    			<a href="{$v['url']}">{$v['catname']}</a>
+				    			{if $v['child']==1}
+				    			{php $thisCatid = $v['catid'];}
+				    			{pc:get sql="SELECT catname,url FROM u_category WHERE parentid='$thisCatid' ORDER BY listorder ASC" num="8" return="dat"}
+				    			<ul>
+				    			{loop $dat $r}
+				    			<li><a href="{$r['url']}">{$r['catname']}</a></li> 
+				    			{/loop}			    			
+				    			</ul>
+				    			{/pc}	
+				    			{/if}
+				    		</li> 
+						{/loop}
+			    		{/pc}
+		    		{/if}
+		    	</ul>
+		    	</div>
+		    </div>
+		    {else}
 		    <div class="blank">
 		    	<ul>
-		    		{if isset($parCatid) && !empty($parCatid) }
+		    		{if isset($parCatid) And !empty($parCatid) }
 			    		{php $arrPar = $ZHpar.','.$parCatid;}
-			    		{pc:get sql="SELECT catid,catname,url FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
+			    		{pc:get sql="SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
 			    		{loop $data $v}
 							<li {if $v['catid']==$catid} class='current' {/if}>
 				    			<a href="{$v['url']}">{$v['catname']}</a>
@@ -52,6 +80,8 @@
 		    		{/if}
 		    	</ul>
 		    </div>
+		    {/if}
+
 	    </div>
         <div class="Sbox">
         	<div class="kong2"></div>

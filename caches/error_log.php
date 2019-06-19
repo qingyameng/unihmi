@@ -280,3 +280,15 @@
 <?php exit;?>06-18 21:37:35 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>06-18 22:26:34 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>06-18 22:30:18 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-19 16:41:15 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-19 16:41:15 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-19 17:12:59 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-19 17:12:59 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-19 17:15:50 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-19 17:40:48 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-19 17:55:12 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-19 17:55:12 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-19 17:55:47 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84

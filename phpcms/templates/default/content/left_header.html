@@ -17,7 +17,7 @@
 
 			{php $ZHpar = '0,17';}
 
-				{pc:get sql="SELECT arrparentid,catname,catdir FROM u_category WHERE catid=$catid" num="1" return="parCat"}	
+				{pc:get sql="SELECT catid,arrparentid,catname,catdir FROM u_category WHERE catid=$catid" num="1" return="parCat"}	
 				<?php 
 				$parCat_str1 = str_replace($ZHpar.',','',$parCat[0]['arrparentid']);
 				$parCat_str2 = str_replace($ZHpar,'',$parCat_str1);
@@ -27,7 +27,7 @@
 						$dat = explode(',',$parCat_str2); 
 						$parCatid = $dat[0];
 						?>
-						{pc:get sql="SELECT catname,catdir FROM u_category WHERE catid=$parCatid" num='1'}
+						{pc:get sql="SELECT catid,catname,catdir FROM u_category WHERE catid=$parCatid" num='1'}
 							<div class="topic"> {$data[0]['catname']}
 								<span style="font-size: 13px;color: #999999;">{$data[0]['catdir']}</span>
 							</div>
@@ -39,7 +39,9 @@
 					{/if}
 				{/pc}
 
-		    <div class="blank">
+			{if $parCat[0]['catid']==11 OR $data[0]['catid']==11}
+		    <div class="ClassNav">
+		    	<div class="NavTree">
 		    	<ul>
 		    		{if isset($parCatid) And !empty($parCatid) }
 			    		{php $arrPar = $ZHpar.','.$parCatid;}
@@ -62,7 +64,26 @@
 			    		{/pc}
 		    		{/if}
 		    	</ul>
+		    	</div>
 		    </div>
+		    {else}
+		    <div class="blank">
+		    	<ul>
+		    		{if isset($parCatid) And !empty($parCatid) }
+			    		{php $arrPar = $ZHpar.','.$parCatid;}
+			    		{pc:get sql="SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
+			    		{loop $data $v}
+							<li {if $v['catid']==$catid} class='current' {/if}>
+				    			<a href="{$v['url']}">{$v['catname']}</a>
+				    		</li> 
+						{/loop}
+			    		{/pc}
+		    		{/if}
+		    	</ul>
+		    </div>
+		    {/if}
+
+
 	    </div>
         <div class="Sbox">
         	<div class="kong2"></div>

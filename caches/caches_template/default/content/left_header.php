@@ -17,7 +17,7 @@
 
 			<?php $ZHpar = '0,17';?>
 
-				<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=4c976f1b64b76f77ea8b70f3b1b1377e&sql=SELECT+arrparentid%2Ccatname%2Ccatdir+FROM+u_category+WHERE+catid%3D%24catid&num=1&return=parCat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT arrparentid,catname,catdir FROM u_category WHERE catid=$catid LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$parCat = $a;unset($a);?>	
+				<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=404717288fff0cd47ee40b951fe11707&sql=SELECT+catid%2Carrparentid%2Ccatname%2Ccatdir+FROM+u_category+WHERE+catid%3D%24catid&num=1&return=parCat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT catid,arrparentid,catname,catdir FROM u_category WHERE catid=$catid LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$parCat = $a;unset($a);?>	
 				<?php 
 				$parCat_str1 = str_replace($ZHpar.',','',$parCat[0]['arrparentid']);
 				$parCat_str2 = str_replace($ZHpar,'',$parCat_str1);
@@ -27,7 +27,7 @@
 						$dat = explode(',',$parCat_str2); 
 						$parCatid = $dat[0];
 						?>
-						<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=39f475251a1c4f5ab22192aa1c9b4871&sql=SELECT+catname%2Ccatdir+FROM+u_category+WHERE+catid%3D%24parCatid&num=%271%27\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT catname,catdir FROM u_category WHERE catid=$parCatid LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+						<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=c57d80a4652c84cb20f038c13249d1cd&sql=SELECT+catid%2Ccatname%2Ccatdir+FROM+u_category+WHERE+catid%3D%24parCatid&num=%271%27\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT catid,catname,catdir FROM u_category WHERE catid=$parCatid LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
 							<div class="topic"> <?php echo $data['0']['catname'];?>
 								<span style="font-size: 13px;color: #999999;"><?php echo $data['0']['catdir'];?></span>
 							</div>
@@ -39,14 +39,16 @@
 					<?php } ?>
 				<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 
-		    <div class="blank">
+			<?php if($parCat[0]['catid']==11 OR $data[0]['catid']==11) { ?>
+		    <div class="ClassNav">
+		    	<div class="NavTree">
 		    	<ul>
 		    		<?php if(isset($parCatid) And !empty($parCatid) ) { ?>
 			    		<?php $arrPar = $ZHpar.','.$parCatid;?>
 			    		<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=de4429b7c113d99c02df4b60e05198fc&sql=SELECT+catid%2Ccatname%2Curl%2Cchild+FROM+u_category+WHERE+arrparentid%3D%27%24arrPar%27+ORDER+BY+listorder+ASC&num=8\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC LIMIT 8");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
 			    		<?php $n=1;if(is_array($data)) foreach($data AS $v) { ?>
-							<li>
-				    			<a href="<?php echo $v['url'];?>" <?php if($v['catid']==$catid) { ?> class='current' <?php } ?>><?php echo $v['catname'];?></a>
+							<li <?php if($v['catid']==$catid) { ?> class='current' <?php } ?>>
+				    			<a href="<?php echo $v['url'];?>"><?php echo $v['catname'];?></a>
 				    			<?php if($v['child']==1) { ?>
 				    			<?php $thisCatid = $v['catid'];?>
 				    			<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=2e273492c9767d158b67912a30f7ad16&sql=SELECT+catname%2Curl+FROM+u_category+WHERE+parentid%3D%27%24thisCatid%27+ORDER+BY+listorder+ASC&num=8&return=dat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT catname,url FROM u_category WHERE parentid='$thisCatid' ORDER BY listorder ASC LIMIT 8");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$dat = $a;unset($a);?>
@@ -62,7 +64,26 @@
 			    		<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 		    		<?php } ?>
 		    	</ul>
+		    	</div>
 		    </div>
+		    <?php } else { ?>
+		    <div class="blank">
+		    	<ul>
+		    		<?php if(isset($parCatid) And !empty($parCatid) ) { ?>
+			    		<?php $arrPar = $ZHpar.','.$parCatid;?>
+			    		<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=de4429b7c113d99c02df4b60e05198fc&sql=SELECT+catid%2Ccatname%2Curl%2Cchild+FROM+u_category+WHERE+arrparentid%3D%27%24arrPar%27+ORDER+BY+listorder+ASC&num=8\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC LIMIT 8");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+			    		<?php $n=1;if(is_array($data)) foreach($data AS $v) { ?>
+							<li <?php if($v['catid']==$catid) { ?> class='current' <?php } ?>>
+				    			<a href="<?php echo $v['url'];?>"><?php echo $v['catname'];?></a>
+				    		</li> 
+						<?php $n++;}unset($n); ?>
+			    		<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+		    		<?php } ?>
+		    	</ul>
+		    </div>
+		    <?php } ?>
+
+
 	    </div>
         <div class="Sbox">
         	<div class="kong2"></div>
