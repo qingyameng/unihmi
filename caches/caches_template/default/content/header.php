@@ -48,7 +48,7 @@ onfocus="if(this.value=='请输入关键词') this.value='';" value="请输入�
         <?php if($i<=5) { ?>
         <?php if($k=='16') $url='/ZH/About/Introduction/';?> 
         <?php if($k=='8')  $url='/ZH/News/CompanyNews/';?> 
-        <?php if($k=='11') $url='/ZH/Product/PCMonitor/';?> 
+        <?php if($k=='11') $url='/ZH/Product/ISP/';?> 
         <?php if($k=='19') $url='/ZH/Service/AfterSale/';?> 
         <a href='<?php echo $url;?>' onmouseover=mopen('m<?php echo $i;?>') onmouseout='mclosetime()'><?php echo $r['catname'];?></a>
         <?php } else { ?>

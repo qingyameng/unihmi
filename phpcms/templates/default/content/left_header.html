@@ -45,16 +45,16 @@
 		    	<ul>
 		    		{if isset($parCatid) And !empty($parCatid) }
 			    		{php $arrPar = $ZHpar.','.$parCatid;}
-			    		{pc:get sql="SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
+			    		{pc:get sql="SELECT catid,catname,url,child,arrchildid FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
 			    		{loop $data $v}
-							<li {if $v['catid']==$catid} class='current' {/if}>
-				    			<a href="{$v['url']}">{$v['catname']}</a>
-				    			{if $v['child']==1}
+							<li style="overflow: hidden;" {if $v['catid']==$catid} class='current' {/if}>
+				    			<a href="{$v['url']}" title="{$v['catname']}">{$v['catname']}</a>
+				    			{if ($v['child']==1) And ($v['catid']==$catid OR in_array($catid,explode(',',$v['arrchildid'])))}
 				    			{php $thisCatid = $v['catid'];}
-				    			{pc:get sql="SELECT catname,url FROM u_category WHERE parentid='$thisCatid' ORDER BY listorder ASC" num="8" return="dat"}
+				    			{pc:get sql="SELECT catid,catname,url FROM u_category WHERE parentid='$thisCatid' ORDER BY listorder ASC" num="8" return="dat"}
 				    			<ul>
 				    			{loop $dat $r}
-				    			<li><a href="{$r['url']}">{$r['catname']}</a></li> 
+				    			<li style="overflow: hidden;" {if $r['catid']==$catid} class='current' {/if}><a href="{$r['url']}" title="{$r['catname']}">{$r['catname']}</a></li> 
 				    			{/loop}			    			
 				    			</ul>
 				    			{/pc}	
@@ -73,8 +73,8 @@
 			    		{php $arrPar = $ZHpar.','.$parCatid;}
 			    		{pc:get sql="SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
 			    		{loop $data $v}
-							<li {if $v['catid']==$catid} class='current' {/if}>
-				    			<a href="{$v['url']}">{$v['catname']}</a>
+							<li style="overflow: hidden;" {if $v['catid']==$catid} class='current' {/if}>
+				    			<a href="{$v['url']}" title="{$v['catname']}">{$v['catname']}</a>
 				    		</li> 
 						{/loop}
 			    		{/pc}
@@ -82,7 +82,6 @@
 		    	</ul>
 		    </div>
 		    {/if}
-
 
 	    </div>
         <div class="Sbox">
