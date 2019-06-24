@@ -1,0 +1,36 @@
+{template "content","header_en"}
+
+{template "content","left_header_en"}
+
+
+<!--main start-->
+<div class="main">
+
+<div class="ArticleList">
+    <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <ul>
+        {pc:content action="lists" catid="$catid" num="25" order="id DESC" page="$page"}
+        {loop $data $r}
+            <tr>
+                <td width='90%' class='fw_t'>
+                    · <a href='{$r[url]}' target='_blank'>{$r[title]}</a>
+                </td>
+                <td width='10%' class='fw_s'>[{date('Y-m-d',$r[inputtime])}]</td>
+            </tr>
+        {/loop}
+        {/pc}
+        </ul>        
+    </table>
+    <div class="clearfix"></div>
+    <div class='t_page ColorLink'>
+        {$pages}
+    </div>
+</div>
+
+</div>
+<!--main end-->
+
+
+{template "content","left_footer_en"}
+
+{template "content","footer_en"}

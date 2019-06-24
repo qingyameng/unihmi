@@ -253,19 +253,49 @@ onfocus="if(this.value=='请输入关键词') this.value='';" value="请输入�
 <!--main start-->
 <div class="main">
 
-<div class="ArticleList">
-    <table  width="100%" border="0" cellspacing="0" cellpadding="0">
-        <ul>
-                                </ul>        
-    </table>
-    <div class="clearfix"></div>
-    <div class='t_page ColorLink'>
-            </div>
+<!--content start-->
+<div class="content">
+<div class="MorePro">
+<div class="CaseBlock">
+
+    <div class="TitleType">
+                                        </div>
+
+    <div style="border-top: 1px solid #005bac; height:25px;"></div>
+
+    <div class="list-cls">
+
+                   
+
+    </div>      
+
 </div>
+<div class="clearfix"></div>
+
+</div>
+
+</div>
+<!--content end-->
 
 </div>
 <!--main end-->
 
+<script type="text/javascript">
+    function getPro(filesize){
+        var catid="49";
+        var idval=('id'+filesize).replace('.','-');
+        $.ajax({
+            url:"http://www.unihmi.com/api.php?op=getpro",
+            data:{'filesize':filesize,'catid':catid},
+            type:"GET",
+            success:function(data){
+                $(".list-cls").html(data);
+                $(".TitleType a").attr('class','Typediv2');
+                $("#"+idval).attr('class','Typediv');
+            }
+        });
+    }
+</script>
 
 
 

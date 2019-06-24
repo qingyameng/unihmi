@@ -10,11 +10,9 @@
 <div class="content">
 <div class="MorePro">
 <div class="CaseBlock">
-<ul>
 
     <div class="TitleType">
     <?php $defaultSize=0;?>
-    <!-- <div class="filesize-cls"> -->
         <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=71cdd7db356b7a002e3cb5f467575873&sql=SELECT+id%2Cfilesize+FROM+%60u_download%60+where+catid%3D%24catid+GROUP+BY+filesize+ORDER+BY+filesize+DESC&num=25\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT id,filesize FROM `u_download` where catid=$catid GROUP BY filesize ORDER BY filesize DESC LIMIT 25");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
         <?php $i=0;?>
         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
@@ -33,9 +31,8 @@
 
     <div class="list-cls">
 
-        <?php if($defaultSize!=0) { ?>
-        <?php $sql="filesize='$defaultSize'";?>
-        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=facce212420e2cebd5a1a551df219b30&action=lists&catid=%24catid&where=%24sql&num=200&order=id+DESC&moreinfo=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$catid,'where'=>$sql,'order'=>'id DESC','moreinfo'=>'1','limit'=>'200',));}?>
+        <?php if($defaultSize!=0) { ?> 
+        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=d541943911565da75e3dae98633d6c09&sql=SELECT+a.id%2Ca.url%2Ca.title%2Ca.thumb%2Ca.model%2Cb.content+FROM+u_download+AS+a+LEFT+JOIN+u_download_data+AS+b+ON+a.id%3Db.id+WHERE+a.catid%3D%24catid+AND+a.filesize%3D%24defaultSize+ORDER+BY+a.id+DESC&num=200\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT a.id,a.url,a.title,a.thumb,a.model,b.content FROM u_download AS a LEFT JOIN u_download_data AS b ON a.id=b.id WHERE a.catid=$catid AND a.filesize=$defaultSize ORDER BY a.id DESC LIMIT 200");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
         <div class="albumblock">
             <div class="inner">
@@ -44,7 +41,7 @@
                 </a>
             </div>
             <div class="title">
-                <a href="<?php echo $r['url'];?>"><?php echo $r['model'];?></a>
+                <a href="<?php echo $r['url'];?>" target="_blank"><?php echo $r['model'];?></a>
             </div>
             <div class="title"><?php echo $r['title'];?></div>
             <div class="content"><?php echo $r['content'];?></div>
@@ -57,7 +54,6 @@
 
     </div>      
 
-</ul>
 </div>
 <div class="clearfix"></div>
 

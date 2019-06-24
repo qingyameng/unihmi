@@ -17,7 +17,7 @@
 
 			{php $ZHpar = '0,22';}
 
-				{pc:get sql="SELECT arrparentid,catname,catdir FROM u_category WHERE catid=$catid" num="1" return="parCat"}
+				{pc:get sql="SELECT catid,arrparentid,catname,catdir FROM u_category WHERE catid=$catid" num="1" return="parCat"}	
 				<?php 
 				$parCat_str1 = str_replace($ZHpar.',','',$parCat[0]['arrparentid']);
 				$parCat_str2 = str_replace($ZHpar,'',$parCat_str1);
@@ -27,13 +27,14 @@
 						$dat = explode(',',$parCat_str2); 
 						$parCatid = $dat[0];
 						?>
-						{pc:get sql="SELECT catname,catdir FROM u_category WHERE catid=$parCatid" num='1'}
+						{pc:get sql="SELECT catid,catname,catdir FROM u_category WHERE catid=$parCatid" num='1'}
 							<div class="topic"> {$data[0]['catname']}
 								<span style="font-size: 13px;color: #999999;">{$data[0]['catdir']}</span>
 							</div>
 						{/pc}
 					{else}
 					<div class="topic"> {$parCat[0]['catname']} 
+						<span style="font-size: 13px;color: #999999;">{$parCat[0]['catdir']}</span>
 					</div>
 					{/if}
 				{/pc}
@@ -44,16 +45,16 @@
 		    	<ul>
 		    		{if isset($parCatid) And !empty($parCatid) }
 			    		{php $arrPar = $ZHpar.','.$parCatid;}
-			    		{pc:get sql="SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
+			    		{pc:get sql="SELECT catid,catname,url,child,arrchildid FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
 			    		{loop $data $v}
-							<li {if $v['catid']==$catid} class='current' {/if}>
-				    			<a href="{$v['url']}">{$v['catname']}</a>
-				    			{if $v['child']==1}
+							<li style="overflow: hidden;" {if $v['catid']==$catid} class='current' {/if}>
+				    			<a href="{$v['url']}" title="{$v['catname']}">{$v['catname']}</a>
+				    			{if ($v['child']==1) And ($v['catid']==$catid OR in_array($catid,explode(',',$v['arrchildid'])))}
 				    			{php $thisCatid = $v['catid'];}
-				    			{pc:get sql="SELECT catname,url FROM u_category WHERE parentid='$thisCatid' ORDER BY listorder ASC" num="8" return="dat"}
+				    			{pc:get sql="SELECT catid,catname,url FROM u_category WHERE parentid='$thisCatid' ORDER BY listorder ASC" num="8" return="dat"}
 				    			<ul>
 				    			{loop $dat $r}
-				    			<li><a href="{$r['url']}">{$r['catname']}</a></li> 
+				    			<li style="overflow: hidden;" {if $r['catid']==$catid} class='current' {/if}><a href="{$r['url']}" title="{$r['catname']}">{$r['catname']}</a></li> 
 				    			{/loop}			    			
 				    			</ul>
 				    			{/pc}	
@@ -72,8 +73,8 @@
 			    		{php $arrPar = $ZHpar.','.$parCatid;}
 			    		{pc:get sql="SELECT catid,catname,url,child FROM u_category WHERE arrparentid='$arrPar' ORDER BY listorder ASC" num="8"}
 			    		{loop $data $v}
-							<li {if $v['catid']==$catid} class='current' {/if}>
-				    			<a href="{$v['url']}">{$v['catname']}</a>
+							<li style="overflow: hidden;" {if $v['catid']==$catid} class='current' {/if}>
+				    			<a href="{$v['url']}" title="{$v['catname']}">{$v['catname']}</a>
 				    		</li> 
 						{/loop}
 			    		{/pc}

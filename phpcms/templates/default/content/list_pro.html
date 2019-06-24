@@ -10,11 +10,9 @@
 <div class="content">
 <div class="MorePro">
 <div class="CaseBlock">
-<ul>
 
     <div class="TitleType">
     {php $defaultSize=0;}
-    <!-- <div class="filesize-cls"> -->
         {pc:get sql="SELECT id,filesize FROM `u_download` where catid=$catid GROUP BY filesize ORDER BY filesize DESC" num="25"}
         {php $i=0;}
         {loop $data $r}
@@ -33,9 +31,8 @@
 
     <div class="list-cls">
 
-        {if $defaultSize!=0}
-        {php $sql="filesize='$defaultSize'";}
-        {pc:content action="lists" catid="$catid" where="$sql" num="200" order="id DESC" moreinfo="1"}
+        {if $defaultSize!=0} 
+        {pc:get sql="SELECT a.id,a.url,a.title,a.thumb,a.model,b.content FROM u_download AS a LEFT JOIN u_download_data AS b ON a.id=b.id WHERE a.catid=$catid AND a.filesize=$defaultSize ORDER BY a.id DESC" num="200"}
         {loop $data $r}
         <div class="albumblock">
             <div class="inner">
@@ -57,7 +54,6 @@
 
     </div>      
 
-</ul>
 </div>
 <div class="clearfix"></div>
 
