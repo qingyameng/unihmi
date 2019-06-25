@@ -65,7 +65,8 @@ function comment_check() {
 		return false;
 	}
 
-	return true;
+	// return true;
+	return false;
 }
 // 图片看不清？点击重新得到验证码
 $('#codeVerify').codeVerify({
