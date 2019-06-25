@@ -1,10 +1,11 @@
-<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header"); ?>
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header_en"); ?>
 
-<?php include template("content","left_header"); ?>
+<?php include template("content","left_header_en"); ?>
+
 
 <?php
 $q = trim($_GET['q']);
-$sql = "SELECT id,url,title,inputtime FROM `u_download` WHERE (title LIKE '%".$q."%' OR model LIKE '%".$q."%') AND catid IN (SELECT catid FROM `u_category` WHERE arrparentid LIKE '0,17,11%') ORDER BY id DESC";
+$sql = "SELECT id,url,title,inputtime FROM `u_download` WHERE (title LIKE '%".$q."%' OR model LIKE '%".$q."%') AND catid IN (SELECT catid FROM `u_category` WHERE arrparentid LIKE '0,22,25%') ORDER BY id DESC";
 ?>
 <!--main start-->
 <div class="main">
@@ -43,6 +44,6 @@ $sql = "SELECT id,url,title,inputtime FROM `u_download` WHERE (title LIKE '%".$q
 <!--main end-->
 
 
-<?php include template("content","left_footer"); ?>
+<?php include template("content","left_footer_en"); ?>
 
-<?php include template("content","footer"); ?>
+<?php include template("content","footer_en"); ?>

@@ -24,17 +24,26 @@
 <div class="logo"><a href="/"><img src="<?php echo IMG_PATH;?>home/logo.png" alt="<?php if(isset($SEO['title']) && !empty($SEO['title'])) { ?><?php echo $SEO['title'];?><?php } ?><?php echo $SEO['site_title'];?>" border="0"></a></div>
 <div class="link">
     <div class="search">
-        <form method="get" action="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=111">
-            <table border="0" cellpadding="0" cellspacing="0">
-              <tr>
-                <td><input type="text" name="q" class="searchTxt" size="15" value="请输入关键词" /></td>
-                <td><input name="Submit" type="image" value="提交" src="<?php echo IMG_PATH;?>home/searchBtn.jpg" align="absmiddle"/></td>
-              </tr>
-            </table>
-        </form>
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td><input type="text" id="q" class="searchTxt" size="15" placeholder="请输入关键词" value="<?php echo $_GET['q'];?>" /></td>
+            <td><input type="image" src="<?php echo IMG_PATH;?>home/searchBtn.jpg" align="absmiddle" onclick="doSearch()" /></td>
+          </tr>
+        </table>
   </div>
   <div class="Language"><a href="http://www.unihmi.com/"><img src="<?php echo IMG_PATH;?>home/china.gif" /> 中文版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.unihmi.com/EN/"><img src="<?php echo IMG_PATH;?>home/English.gif" /> ENGLISH</a></div>
-  </div>
+</div>
+<script type="text/javascript">
+    function doSearch(){
+        var keyword = $.trim($("#q").val());
+        if(!keyword){
+            alert("请输入关键词");
+            return false;
+        }else{
+            window.location.href="/index.php?m=content&c=index&a=lists&catid=111&q="+keyword;
+        }
+    }
+</script>
 <div class="tel">
 <!--nav start-->
 <div id="NavLink">
