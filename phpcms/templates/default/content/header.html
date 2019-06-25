@@ -40,7 +40,7 @@
             alert("请输入关键词");
             return false;
         }else{
-            window.location.href="/index.php?m=content&c=index&a=lists&catid=111&q="+keyword;
+            // window.location.href="/index.php?m=content&c=index&a=lists&catid=111&q="+keyword;
         }
     }
 </script>

@@ -117,7 +117,7 @@
 			<span>您的位置：
 				
 				<a href="/">首页</a> > 
-				{if $catid='111'}
+				{if $catid=='111'}
 					<span>{$catname}</span></span>
 				{else}
 					{pc:get sql="SELECT arrparentid FROM u_category WHERE catid=$catid" num="1"}
