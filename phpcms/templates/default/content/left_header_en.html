@@ -7,7 +7,7 @@
 	<!--foncus end-->
 	<div class="HeightTab clearfix"></div>
 	<!--inner start -->
-	<div class="inner">
+	<div class="inner mainmiddle">
 
 
 	<!--left start-->

@@ -1,8 +1,10 @@
 #body .InnerBanner{
 	width:1000px;
 	margin:auto;}
-#body .inner{
+#body .mainmiddle{
 	min-height: 604px;
+	}
+#body .inner{
 	}
 #body .inner .left{
 	width:200px;

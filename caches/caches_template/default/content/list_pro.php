@@ -37,7 +37,7 @@
         <div class="albumblock">
             <div class="inner">
                 <a href="<?php echo $r['url'];?>" target="_blank" title="<?php echo $r['title'];?>">
-                    <img src="<?php echo $r['thumb'];?>">
+                    <img src="<?php echo $r['thumb'];?>" onerror="javascript:this.src='<?php echo IMG_PATH;?>home/201667113653.jpg';">
                 </a>
             </div>
             <div class="title">
