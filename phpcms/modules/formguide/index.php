@@ -75,7 +75,7 @@ class index {
 				}
 				$this->db->update(array('items'=>'+=1'), array('modelid'=>$formid, 'siteid'=>$this->siteid));
 			}
-			showmessage(L('thanks'), APP_PATH);
+			showmessage(L('thanks'), HTTP_REFERER);
 		} else {
 			if ($setting['allowunreg']==0 && !$userid && $_GET['action']=='js') {
 				$no_allowed = 1;

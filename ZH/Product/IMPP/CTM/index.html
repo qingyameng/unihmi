@@ -40,7 +40,7 @@
             alert("请输入关键词");
             return false;
         }else{
-            window.location.href="/index.php?m=content&c=index&a=lists&catid=111&q="+keyword;
+            // window.location.href="/index.php?m=content&c=index&a=lists&catid=111&q="+keyword;
         }
     }
 </script>
@@ -255,8 +255,11 @@
 			<span>您的位置：
 				
 				<a href="/">首页</a> > 
-									<span>电容触摸显示器</span></span>
-							</span>
+																																																		<a href="/ZH/Product/">产品中心</a> > 
+																																<a href="/ZH/Product/IMPP/">工业触摸显示产品</a> > 
+																										
+											<a href='/ZH/Service/AfterSale/'>电容触摸显示器</a>
+												</span>
 
 		</div>
 
@@ -292,7 +295,7 @@
 
 <script type="text/javascript">
     function getPro(filesize){
-        var catid="111";
+        var catid="49";
         var idval=('id'+filesize).replace('.','-');
         $.ajax({
             url:"http://www.unihmi.com/api.php?op=getpro",
@@ -337,6 +340,8 @@
 <!--footer end -->
 
 </div>
+
+<script>(function() {var _53code = document.createElement("script");_53code.src = "https://tb.53kf.com/code/code/E1463467F65EA157EBAE55EEB306F4B57/1";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_53code, s);})();</script>
 
 </body>
 </html>

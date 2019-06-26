@@ -2,6 +2,7 @@
 	width:1000px;
 	margin:auto;}
 #body .inner{
+	min-height: 604px;
 	}
 #body .inner .left{
 	width:200px;

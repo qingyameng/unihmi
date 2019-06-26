@@ -63,24 +63,31 @@ function comment_check() {
 		window.alert('Please enter the verification code ^_^');
 		document.form1.verycode.focus();
 		return false;
+	}else{
+		var hasCode = $('.verify-code').text().toUpperCase();
+		var inputCode = $('.codeInput').val().toUpperCase();
+		if (hasCode != inputCode) {
+		window.alert('Please enter the correct validation code ^_^');
+		document.form1.verycode.focus();
+			return false;
+		}
 	}
-
-	return true;
+	
 }
 // 图片看不清？点击重新得到验证码
 $('#codeVerify').codeVerify({
 	type: 1,
-	width: '70px',
+	width: '100px',
 	height: '25px',
 	fontSize: '16px',
 	codeLength: 4,
-	btnId: 'dosubmit',
+	btnId: 'formSubmit',
 	ready: function() {},
 	success: function() {
-		alert('Verify matching！');
+		// alert('Verify matching！');
 	},
 	error: function() {
-		alert('erification code mismatch！');
+		// alert('erification code mismatch！');
 	}
 });
 $('#codeVerify .verify-change-code').html('');
