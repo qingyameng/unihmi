@@ -63,6 +63,8 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
     	<div class="tab_style white cut_line text-r">
     		<a href="javascript:;" onclick="lock_screen()"><img src="<?php echo IMG_PATH.'icon/lockscreen.png'?>"> <?php echo L('lockscreen')?></a>    		
     		<span>|</span>
+    		<a href="/ChineseWebsite-WebsiteOperationalInstructions.pdf" target="_blank">网站操作说明</a>
+    		<span>|</span>
     		<a href="http://v9.help.phpcms.cn/" target="_blank"><?php echo L('help')?></a>
     <ul id="Skin">
 		<li class="s1 styleswitch" rel="styles1"></li>
