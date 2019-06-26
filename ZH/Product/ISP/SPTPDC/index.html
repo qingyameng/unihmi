@@ -40,7 +40,7 @@
             alert("请输入关键词");
             return false;
         }else{
-            window.location.href="/index.php?m=content&c=index&a=lists&catid=111&q="+keyword;
+            // window.location.href="/index.php?m=content&c=index&a=lists&catid=111&q="+keyword;
         }
     }
 </script>
@@ -256,8 +256,11 @@
 			<span>您的位置：
 				
 				<a href="/">首页</a> > 
-									<span>轨道PIS司机室触摸监控</span></span>
-							</span>
+																																																		<a href="/ZH/Product/">产品中心</a> > 
+																																<a href="/ZH/Product/ISP/">专用行业显示终端产品</a> > 
+																										
+											<a href='/ZH/Service/AfterSale/'>轨道PIS司机室触摸监控</a>
+												</span>
 
 		</div>
 
@@ -293,7 +296,7 @@
 
 <script type="text/javascript">
     function getPro(filesize){
-        var catid="111";
+        var catid="43";
         var idval=('id'+filesize).replace('.','-');
         $.ajax({
             url:"http://www.unihmi.com/api.php?op=getpro",

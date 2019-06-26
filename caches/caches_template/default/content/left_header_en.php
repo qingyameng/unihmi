@@ -117,7 +117,7 @@
 			<span>Your Location：
 				
 				<a href="/EN/">HOME</a> > 
-				<?php if($catid='111') { ?>
+				<?php if($catid=='112') { ?>
 					<span><?php echo $catname;?></span></span>
 				<?php } else { ?>
 					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=197265c05a797c6cad54d787bdd38ba9&sql=SELECT+arrparentid+FROM+u_category+WHERE+catid%3D%24catid&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT arrparentid FROM u_category WHERE catid=$catid LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>

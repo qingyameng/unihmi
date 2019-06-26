@@ -40,7 +40,7 @@
             alert("请输入关键词");
             return false;
         }else{
-            window.location.href="/index.php?m=content&c=index&a=lists&catid=111&q="+keyword;
+            // window.location.href="/index.php?m=content&c=index&a=lists&catid=111&q="+keyword;
         }
     }
 </script>
@@ -256,8 +256,11 @@
 			<span>您的位置：
 				
 				<a href="/">首页</a> > 
-									<span>轨道PIS导乘显示终端</span></span>
-							</span>
+																																																		<a href="/ZH/Product/">产品中心</a> > 
+																																<a href="/ZH/Product/ISP/">专用行业显示终端产品</a> > 
+																										
+											<a href='/ZH/Service/AfterSale/'>轨道PIS导乘显示终端</a>
+												</span>
 
 		</div>
 
@@ -270,13 +273,51 @@
 <div class="CaseBlock">
 
     <div class="TitleType">
-                                        </div>
+                                                                    <a id="id21-5" onclick="getPro(21.5)" style="width:33%;"  class="Typediv" >
+            21.5寸
+        </a>
+                                                <a id="id19" onclick="getPro(19)" style="width:33%;"  class="Typediv2" >
+            19寸
+        </a>
+                                                <a id="id17" onclick="getPro(17)" style="width:33%;"  class="Typediv2" >
+            17寸
+        </a>
+                    </div>
 
     <div style="border-top: 1px solid #005bac; height:25px;"></div>
 
     <div class="list-cls">
 
-                   
+         
+                        <div class="albumblock">
+            <div class="inner">
+                <a href="http://www.unihmi.com/ZH/Product/ISP/SPDMS/2019/0624/12.html" target="_blank" title="fgdfgdsg标题">
+                    <img src="">
+                </a>
+            </div>
+            <div class="title">
+                <a href="http://www.unihmi.com/ZH/Product/ISP/SPDMS/2019/0624/12.html" target="_blank">TPC6000-A2153（SL/BW）</a>
+            </div>
+            <div class="title">fgdfgdsg标题</div>
+            <div class="content">dfgdsg内容</div>
+        </div>
+        <div style="height:25px;"></div>
+        <div style="border-top: 1px dotted #999999; height:25px;"></div>
+                <div class="albumblock">
+            <div class="inner">
+                <a href="http://www.unihmi.com/ZH/Product/ISP/SPDMS/2019/0619/9.html" target="_blank" title="dfgsdgrfgh标题">
+                    <img src="">
+                </a>
+            </div>
+            <div class="title">
+                <a href="http://www.unihmi.com/ZH/Product/ISP/SPDMS/2019/0619/9.html" target="_blank">TPC6000-A2151</a>
+            </div>
+            <div class="title">dfgsdgrfgh标题</div>
+            <div class="content">gdfgdfgdfgfd<span style="color: rgb(119, 119, 119); font-family: tahoma, arial, 宋体, sans-serif; text-align: right;">内容</span></div>
+        </div>
+        <div style="height:25px;"></div>
+        <div style="border-top: 1px dotted #999999; height:25px;"></div>
+                                   
 
     </div>      
 
@@ -293,7 +334,7 @@
 
 <script type="text/javascript">
     function getPro(filesize){
-        var catid="111";
+        var catid="41";
         var idval=('id'+filesize).replace('.','-');
         $.ajax({
             url:"http://www.unihmi.com/api.php?op=getpro",
