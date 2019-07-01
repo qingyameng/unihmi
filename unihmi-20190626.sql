@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50721
 File Encoding         : 65001
 
-Date: 2019-06-26 15:17:30
+Date: 2019-06-26 15:29:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -148,7 +148,7 @@ CREATE TABLE `u_attachment` (
   `siteid` smallint(5) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`aid`),
   KEY `authcode` (`authcode`)
-) ENGINE=MyISAM AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=78 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of u_attachment
@@ -214,6 +214,17 @@ INSERT INTO `u_attachment` VALUES ('63', 'content', '41', '5月餐费.pdf', '201
 INSERT INTO `u_attachment` VALUES ('64', 'content', '65', '5月餐费.pdf', '2019/0625/20190625091114377.pdf', '265274', 'pdf', '0', '0', '0', '1', '1561468274', '127.0.0.1', '1', '40412b00b1932095c9a2be8cf1e58b24', '1');
 INSERT INTO `u_attachment` VALUES ('65', 'content', '65', '201943113055.jpg', '2019/0625/20190625091316181.jpg', '72832', 'jpg', '1', '0', '0', '1', '1561468396', '127.0.0.1', '1', '8ba1398726458aa9b6b0de77cc79f8ad', '1');
 INSERT INTO `u_attachment` VALUES ('66', 'content', '41', 'TPC6000-61X1T-spec.pdf', '2019/0626/20190626120545376.pdf', '9695975', 'pdf', '0', '0', '0', '1', '1561521945', '127.0.0.1', '1', '01707060c51244e0e53ad514605e324f', '1');
+INSERT INTO `u_attachment` VALUES ('67', 'content', '0', '微信图片_20190622180200.jpg', '2019/0626/20190626032048466.jpg', '86372', 'jpg', '1', '0', '0', '1', '1561533648', '127.0.0.1', '0', '1587129201098ac24d15243aa41dfe6b', '1');
+INSERT INTO `u_attachment` VALUES ('68', 'content', '0', '微信图片_20190622180234.jpg', '2019/0626/20190626032114977.jpg', '107103', 'jpg', '1', '0', '0', '1', '1561533674', '127.0.0.1', '0', '0ed8362458986c551a0d417213351d59', '1');
+INSERT INTO `u_attachment` VALUES ('69', 'content', '0', '微信图片_20190622180243.jpg', '2019/0626/20190626032129991.jpg', '92559', 'jpg', '1', '0', '0', '1', '1561533689', '127.0.0.1', '0', 'cd211a8fd5a9e80c465372e2ed8668de', '1');
+INSERT INTO `u_attachment` VALUES ('70', 'content', '0', '微信图片_20190622180259.jpg', '2019/0626/20190626032139166.jpg', '88031', 'jpg', '1', '0', '0', '1', '1561533699', '127.0.0.1', '0', '4d894501798c449ac916d907a4baf005', '1');
+INSERT INTO `u_attachment` VALUES ('71', 'content', '0', '微信图片_20190622180306.jpg', '2019/0626/20190626032149729.jpg', '83478', 'jpg', '1', '0', '0', '1', '1561533709', '127.0.0.1', '0', '04adba45a73634817883096e30ba137c', '1');
+INSERT INTO `u_attachment` VALUES ('72', 'content', '0', '微信图片_20190622180313.jpg', '2019/0626/20190626032158949.jpg', '86277', 'jpg', '1', '0', '0', '1', '1561533718', '127.0.0.1', '0', 'b16579a6531027acd983b8fc5ba5eb91', '1');
+INSERT INTO `u_attachment` VALUES ('73', 'content', '0', '微信图片_20190622180234.jpg', '2019/0626/20190626032523388.jpg', '107103', 'jpg', '1', '0', '0', '1', '1561533923', '127.0.0.1', '0', '5bbabe99e6f75805c520eb9ebbcca0b5', '1');
+INSERT INTO `u_attachment` VALUES ('74', 'content', '0', '微信图片_20190622180243.jpg', '2019/0626/20190626032531645.jpg', '92559', 'jpg', '1', '0', '0', '1', '1561533931', '127.0.0.1', '0', '8e4d46930bda4caf0b3d2f58670b2ec0', '1');
+INSERT INTO `u_attachment` VALUES ('75', 'content', '0', '微信图片_20190622180259.jpg', '2019/0626/20190626032539964.jpg', '88031', 'jpg', '1', '0', '0', '1', '1561533939', '127.0.0.1', '0', 'bacb5e4b9a9fa89a1371c5567043aced', '1');
+INSERT INTO `u_attachment` VALUES ('76', 'content', '0', '微信图片_20190622180306.jpg', '2019/0626/20190626032547913.jpg', '83478', 'jpg', '1', '0', '0', '1', '1561533946', '127.0.0.1', '0', 'c39137474d433d73330f1aa65044e0d7', '1');
+INSERT INTO `u_attachment` VALUES ('77', 'content', '0', '微信图片_20190622180313.jpg', '2019/0626/20190626032555409.jpg', '86277', 'jpg', '1', '0', '0', '1', '1561533955', '127.0.0.1', '0', '9e1834c0b836212a8d6ccf3ddb698c47', '1');
 
 -- ----------------------------
 -- Table structure for `u_attachment_index`
@@ -4568,7 +4579,7 @@ CREATE TABLE `u_log` (
   PRIMARY KEY (`logid`),
   KEY `module` (`module`,`file`,`action`),
   KEY `username` (`username`,`action`)
-) ENGINE=MyISAM AUTO_INCREMENT=5944 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5954 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of u_log
@@ -10516,6 +10527,16 @@ INSERT INTO `u_log` VALUES ('5940', '', '0', 'content', '', 'create_html', '?m=c
 INSERT INTO `u_log` VALUES ('5941', '', '0', 'content', '', 'create_html', '?m=content&c=create_html&a=show', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:01:05');
 INSERT INTO `u_log` VALUES ('5942', '', '0', 'content', '', 'create_html', '?m=content&c=create_html&a=show', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:01:06');
 INSERT INTO `u_log` VALUES ('5943', '', '0', 'content', '', 'create_html', '?m=content&c=create_html&a=show', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:01:07');
+INSERT INTO `u_log` VALUES ('5944', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:20:13');
+INSERT INTO `u_log` VALUES ('5945', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:22:03');
+INSERT INTO `u_log` VALUES ('5946', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:22:04');
+INSERT INTO `u_log` VALUES ('5947', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:24:45');
+INSERT INTO `u_log` VALUES ('5948', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:24:46');
+INSERT INTO `u_log` VALUES ('5949', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:25:00');
+INSERT INTO `u_log` VALUES ('5950', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:25:58');
+INSERT INTO `u_log` VALUES ('5951', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:25:59');
+INSERT INTO `u_log` VALUES ('5952', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:26:03');
+INSERT INTO `u_log` VALUES ('5953', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'unihmi', '127.0.0.1', '2019-06-26 15:26:04');
 
 -- ----------------------------
 -- Table structure for `u_member`
@@ -11536,7 +11557,8 @@ INSERT INTO `u_page` VALUES ('96', 'Introduction', ';', '', '<strong>Introductio
 INSERT INTO `u_page` VALUES ('97', 'Culture', ';', '', '<strong>Our Mission</strong><br />\r\n&nbsp;<br />\r\nDedicated to display technology and service, improve the platform of Human Machine Interface and make better visual experience.<br />\r\n&nbsp;<br />\r\n<strong>Our Value</strong><br />\r\nContinuously cultivated R&amp;D and strengthen our engineer team in order to supply high-quality products which exactly meet our customers&rsquo; needs.<br />\r\nEncourage the innovation and grow up with our partner.<br />\r\nProvide free maintenance for customers including OS upgrade service, bug fixing and technical support etc.<br />\r\nPursue the excellence, keep team-work spirit and be a reliable partner.<br />\r\n&nbsp;<br />\r\n&nbsp;<br />\r\n<br />\r\n', '', '0');
 INSERT INTO `u_page` VALUES ('98', 'Product Areas', ';', '', '<strong>Our Products</strong><br />\r\n&nbsp;<br />\r\nIndustrial Touch Monitor<br />\r\n&nbsp;Industrial Touch Panel Computer<br />\r\n&nbsp;LED Display<br />\r\n&nbsp;<br />\r\n<strong>Application Field</strong><br />\r\nEndless effort, Leading the industry<br />\r\nAfter 8 years&rsquo; development, Uni-HMI has become a leading company in the industry. &nbsp;Our products are widely applied in various areas, including subway, intelligent transportation, power and new energy, medical equipment ,environmental monitoring and mechanical manufacturing, etc.<br />\r\n&nbsp;<br />\r\n<br />\r\n', '', '0');
 INSERT INTO `u_page` VALUES ('99', 'R&D/Produce', ';', '', '<strong>Product Research &amp; Development</strong><br />\r\nThere are a group of experienced, high-effective and high-innovative R &amp; D team in our company, which timely and accurately focus on &nbsp;latest formation on product development and market demand. We founded team for system development, board development, organization design, thermal design, product testing and software services, according &nbsp;to the latest technical research and innovation. Strictly following new product development process management, we have professional testing equipments for high temperature testing, shock and vibration, EMI / EMC in order to produce the reliable products and to ensure &nbsp;the product producing successfully and timely.<br />\r\n<strong>&nbsp;OEM/ODM</strong><br />\r\nWe have rich experiences, manufacturing capability and research resources in the field. At present, we &nbsp;have established an efficient customized service team for all OEM / ODM customers to create the most competitive products.<br />\r\n<strong>Manufacturing</strong><br />\r\nFollowing ISO9001 quality management system, we have established a complete quality assurance system for wide temperature testing, vibration testing, shock testing, security testing, EMI testing and fatigue testing. The quality control in the producing part includes IQC, IPQC,OQC, moving / static baking machine, function / performance tests to make sure all the products are stable and reliable.<br />\r\n<strong>Technical Services</strong><br />\r\nStrong technical support is a vital part &nbsp;for us. Each branch company is quipped with professional sales engineers and technical staff so that customers could get the most efficient service and the most satisfactory solution. At the same time, customers can take advantage of Uni-HMI&#39;s FAQ and our online services to obtain &nbsp;updated product materials.<br />\r\n&nbsp;<br />\r\n<br />\r\n', '', '0');
-INSERT INTO `u_page` VALUES ('6', '资质认证', ';', '', '', '', '0');
+INSERT INTO `u_page` VALUES ('6', '资质认证', ';', '', '<img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032114977.jpg\" style=\"width: 561px; height: 800px;\" /><img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032129991.jpg\" style=\"width: 561px; height: 800px;\" /><img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032139166.jpg\" style=\"width: 566px; height: 800px;\" /><img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032149729.jpg\" style=\"width: 566px; height: 800px;\" /><img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032158949.jpg\" style=\"width: 566px; height: 800px;\" />', '', '0');
+INSERT INTO `u_page` VALUES ('100', 'Qualifications', ';', '', '<img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032523388.jpg\" style=\"width: 561px; height: 800px;\" /><img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032531645.jpg\" style=\"width: 561px; height: 800px;\" /><img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032539964.jpg\" style=\"width: 566px; height: 800px;\" /><img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032547913.jpg\" style=\"width: 566px; height: 800px;\" /><img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0626/20190626032555409.jpg\" style=\"width: 566px; height: 800px;\" />', '', '0');
 INSERT INTO `u_page` VALUES ('21', '联系我们', ';', '', '联系我们gaklfdnbkaldnb', '', '0');
 INSERT INTO `u_page` VALUES ('102', 'sdfdsfsd', ';', '', 'dfsdgdfhgdfhgdfds<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<br />\r\n<img alt=\"\" src=\"http://www.unihmi.com/uploadfile/2019/0615/20190615084324163.gif\" style=\"width: 18px; height: 18px;\" />&nbsp;<a href=\"http://www.unihmi.com/uploadfile/2019/0615/20190615084437859.doc\">售后维修记录表V2012.1.doc</a>', '', '0');
 INSERT INTO `u_page` VALUES ('105', 'service', ';', '', '<strong style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\"><span style=\"font-size: 14px;\">Sevice Center</span></strong><span style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\">&nbsp;</span><br style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\" />\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"ke-zeroborder\" style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\" width=\"100%\">\r\n<tbody>\r\n	<tr>\r\n	<td height=\"5\" style=\"font-size: 14px;\">&nbsp;</td>\r\n	</tr>\r\n	<tr>\r\n	<td bgcolor=\"#cccccc\" height=\"1\" style=\"font-size: 14px;\">&nbsp;</td>\r\n	</tr>\r\n	<tr>\r\n	<td height=\"5\" style=\"font-size: 14px;\">&nbsp;</td>\r\n	</tr>\r\n</tbody>\r\n</table>\r\n<span style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\">ADD：#2649&nbsp;Tian&#39;e dang RD.Wuzhong Destric,Suzhou,Jiangsu</span><br style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\" />\r\n<span style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\">TEL：+86-512-66202700&nbsp;</span><br style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\" />\r\n<span style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\">FAX：+86-512-66203900</span><br style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\" />\r\n<span style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\">E-MAIL：sales@nodka.com&nbsp;</span><br style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\" />\r\n<span style=\"color: rgb(0, 0, 0); font-family: \'Microsoft Yahei\', Arial, Helvetica, sans-serif; line-height: 25px;\">HOTLINE：+86-400-600-5009&nbsp;</span>', '', '0');
@@ -11987,7 +12009,7 @@ CREATE TABLE `u_session` (
 -- ----------------------------
 -- Records of u_session
 -- ----------------------------
-INSERT INTO `u_session` VALUES ('lsonhpbmtdpq1kimjt2njj7m93', '1', '127.0.0.1', '1561533141', '1', '0', 'admin', 'index', 'public_session_life', 'code|s:0:\"\";userid|s:1:\"1\";roleid|s:1:\"1\";pc_hash|s:6:\"0xgT6R\";lock_screen|i:0;');
+INSERT INTO `u_session` VALUES ('lsonhpbmtdpq1kimjt2njj7m93', '1', '127.0.0.1', '1561533985', '1', '0', 'admin', 'index', 'public_session_life', 'code|s:0:\"\";userid|s:1:\"1\";roleid|s:1:\"1\";pc_hash|s:6:\"0xgT6R\";lock_screen|i:0;');
 
 -- ----------------------------
 -- Table structure for `u_site`
