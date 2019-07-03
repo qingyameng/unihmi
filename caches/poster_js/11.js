@@ -20,7 +20,7 @@ function PCMSAD(PID) {
 function statAD() {
 	var new_element = document.createElement("script"); 
 	new_element.type = "text/javascript";
-	new_element.src="http://www.unihmi.com/index.php?m=poster&c=index&a=show&siteid="+this.SiteID+"&id="+this.ADID+"&spaceid="+this.PosID; 
+	new_element.src="http://www.bxtouch.com/index.php?m=poster&c=index&a=show&siteid="+this.SiteID+"&id="+this.ADID+"&spaceid="+this.PosID; 
 	document.body.appendChild(new_element);
 }
 
@@ -49,8 +49,8 @@ cmsAD_11.PosID = 11;
 cmsAD_11.ADID = 20; 
 cmsAD_11.ADType = "images"; 
 cmsAD_11.ADName = "banner_en_7"; 
-cmsAD_11.ADContent = "{'Images':[{'imgADLinkUrl':'http%3A%2F%2Fwww.unihmi.com','imgADAlt':'','ImgPath':'http://www.unihmi.com/uploadfile/2019/0613/20190613060327546.jpg'}],'imgADLinkTarget':'New','Count':'1','showAlt':'Y'}"; 
-cmsAD_11.URL = "http://www.unihmi.com/index.php?m=poster&c=index"; 
+cmsAD_11.ADContent = "{'Images':[{'imgADLinkUrl':'http%3A%2F%2Fwww.bxtouch.com','imgADAlt':'','ImgPath':'http://www.bxtouch.com/uploadfile/2019/0613/20190613060327546.jpg'}],'imgADLinkTarget':'New','Count':'1','showAlt':'Y'}"; 
+cmsAD_11.URL = "http://www.bxtouch.com/index.php?m=poster&c=index"; 
 cmsAD_11.SiteID = 1; 
 cmsAD_11.Width = 1424; 
 cmsAD_11.Height = 300; 

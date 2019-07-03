@@ -239,31 +239,41 @@ jQuery(".fullSlide").slide({
           <td height="21"></td>
         </tr>
         <tr>
-          <td><a href="/EN/Service/OrderProducts/"><img src="<?php echo IMG_PATH;?>home/index_en_01.jpg" border="0"></a></td>
+          <td class="kk-hg kk-img1">
+            <a href="/EN/Service/OrderProducts/" class="kk-a"></a>
+          </td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/EN/Service/FeedBack/"><img src="<?php echo IMG_PATH;?>home/index_en_03.jpg" border="0" /></a></td>
+          <td class="kk-hg kk-img3">
+            <a href="/EN/Service/FeedBack/" class="kk-a"></a>
+          </td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/EN/Service/AfterSale/"><img src="<?php echo IMG_PATH;?>home/index_en_05.jpg" border="0" /></a></td>
+          <td class="kk-hg kk-img5">
+            <a href="/EN/Service/AfterSale/" class="kk-a"></a>
+          </td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/EN/Service/PF/Catalog/"><img src="<?php echo IMG_PATH;?>home/index_en_07.jpg" border="0" /></a></td>
+          <td class="kk-hg kk-img7">
+            <a href="/EN/Service/PF/Catalog/" class="kk-a"></a>
+          </td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/EN/Service/PF/Journal/"><img src="<?php echo IMG_PATH;?>home/index_en_09.jpg" border="0" /></a></td>
+          <td class="kk-hg kk-img9">
+            <a href="/EN/Service/PF/Journal/" class="kk-a"></a>
+          </td>
         </tr>
       </table>
     </div>

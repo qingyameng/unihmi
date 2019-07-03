@@ -23,7 +23,7 @@ if($info){
 $html = '';
 if($info){
 	foreach($info as $r){
-		$html .= '<div class="albumblock"><div class="inner"><a href="'.$r['url'].'" target="_blank" title="'.$r['title'].'"><img src="'.$r['thumb'].'"></a></div><div class="title"><a href="'.$r['url'].'" target="_blank">'.$r['model'].'</a></div><div class="title">'.$r['title'].'</div><div class="content">'.$r['content'].'</div></div><div style="height:25px;"></div><div style="border-top: 1px dotted #999999; height:25px;"></div>';
+		$html .= '<div class="albumblock"><div class="inner"><a href="'.$r['url'].'" target="_blank" title="'.$r['title'].'"><img src="'.$r['thumb'].'" onerror="javascript:this.src=\'/statics/images/home/201667113653.jpg\';"></a></div><div class="title"><a href="'.$r['url'].'" target="_blank">'.$r['model'].'</a></div><div class="title">'.$r['title'].'</div><div class="content">'.$r['content'].'</div></div><div style="height:25px;"></div><div style="border-top: 1px dotted #999999; height:25px;"></div>';
 	}
 }
 

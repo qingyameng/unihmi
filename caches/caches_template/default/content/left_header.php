@@ -86,25 +86,25 @@
 	    </div>
         <div class="Sbox">
         	<div class="kong2"></div>
-            <a href="/ZH/Service/OrderProducts/">
-              <img src="<?php echo IMG_PATH;?>home/left_01.jpg" border="0" />
-            </a>
+			<div class="kkleft-hg kkleft-img1">
+				<a href="/ZH/Service/OrderProducts/" class="kkleft-a">在线订购产品</a>
+			</div>
 			<div class="HeightTab clearfix"></div>
-			<a href="/ZH/Service/FeedBack/">
-			  <img src="<?php echo IMG_PATH;?>home/left_03.jpg" border="0" />
-			</a>
+			<div class="kkleft-hg kkleft-img3">
+				<a href="/ZH/Service/FeedBack/" class="kkleft-a">在线技术支持</a>
+			</div>
 			<div class="HeightTab clearfix"></div>
-			<a href="/ZH/Service/AfterSale/">
-			  <img src="<?php echo IMG_PATH;?>home/left_05.jpg" border="0" />
-			</a>
+			<div class="kkleft-hg kkleft-img5">
+				<a href="/ZH/Service/AfterSale/" class="kkleft-a">在线售后服务</a>
+			</div>
 			<div class="HeightTab clearfix"></div>
-			<a href="/ZH/Service/PF/Catalog/">
-			  <img src="<?php echo IMG_PATH;?>home/left_07.jpg" border="0" />
-			</a>
+			<div class="kkleft-hg kkleft-img7">
+				<a href="/ZH/Service/PF/Catalog/" class="kkleft-a">索取最新型录</a>
+			</div>
 			<div class="HeightTab clearfix"></div>
-			<a href="/ZH/Service/PF/Journal/">
-			  <img src="<?php echo IMG_PATH;?>home/left_09.jpg" border="0" />
-			</a>
+			<div class="kkleft-hg kkleft-img9">
+				<a href="/ZH/Service/PF/Journal/" class="kkleft-a">北联电子期刊</a>
+			</div>
 		</div>
 	</div>
 	<!--left end-->

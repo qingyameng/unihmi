@@ -31,7 +31,7 @@
           </tr>
         </table>
   </div>
-  <div class="Language"><a href="http://www.unihmi.com/"><img src="<?php echo IMG_PATH;?>home/china.gif" /> 中文版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.unihmi.com/EN/"><img src="<?php echo IMG_PATH;?>home/English.gif" /> ENGLISH</a></div>
+  <div class="Language"><a href="/"><img src="<?php echo IMG_PATH;?>home/china.gif" /> 中文版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/EN/"><img src="<?php echo IMG_PATH;?>home/English.gif" /> ENGLISH</a></div>
   </div>
 <script type="text/javascript">
     function doSearch(){

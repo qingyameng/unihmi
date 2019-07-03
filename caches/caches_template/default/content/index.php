@@ -5,7 +5,7 @@
 <div class="fullSlide">
   <div class="bd">
   <ul>
-  <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=3f030ac46fe7d549f49b349aba8bc7de&sql=SELECT+setting+FROM+u_poster+WHERE+spaceid+%3D+1+ORDER+BY+listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT setting FROM u_poster WHERE spaceid = 1 ORDER BY listorder ASC LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?> 
+  <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=3f030ac46fe7d549f49b349aba8bc7de&sql=SELECT+setting+FROM+u_poster+WHERE+spaceid+%3D+1+ORDER+BY+listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT setting FROM u_poster WHERE spaceid = 1 ORDER BY listorder ASC LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?> 
   <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
   <?php 
     $narry = string2array($r[setting]); 
@@ -51,7 +51,7 @@ jQuery(".fullSlide").slide({
 <div class="MainBlock">
 
     <?php $i=0;?>
-    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=f924043dcbaf69335a4aa91a1fd8edf7&action=category&catid=11&num=5&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'11','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'5',));}?>
+    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=f924043dcbaf69335a4aa91a1fd8edf7&action=category&catid=11&num=5&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'11','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'5',));}?>
     <?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
       <?php $i++;?>
       <?php if($i=='1') $color='f39700';?> 
@@ -74,7 +74,7 @@ jQuery(".fullSlide").slide({
         <div style='height:10px;'></div>
         <div class='liebiao'>
           <ul>
-            <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=d3f6258312dedc3cb11d7ddb33a97535&action=category&catid=%24k&num=8&siteid=%24siteid&order=listorder+ASC&return=dat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$dat = $content_tag->category(array('catid'=>$k,'siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'8',));}?>
+            <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=d3f6258312dedc3cb11d7ddb33a97535&action=category&catid=%24k&num=8&siteid=%24siteid&order=listorder+ASC&return=dat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$dat = $content_tag->category(array('catid'=>$k,'siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'8',));}?>
             <?php $n=1;if(is_array($dat)) foreach($dat AS $v) { ?>
             <li title="<?php echo $v['catname'];?>">
               <a href='<?php echo $v['url'];?>' target='_blank'>
@@ -114,7 +114,7 @@ jQuery(".fullSlide").slide({
       <div class="HeightTab clearfix"></div>
       <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed">
         <ul>
-          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=bb5c1f884a714af7cc4dbe5468a9ecc5&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D9+order+by+id+DESC&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=9 order by id DESC LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=bb5c1f884a714af7cc4dbe5468a9ecc5&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D9+order+by+id+DESC&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=9 order by id DESC LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
           <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
           <tr>
             <td width='75%'>
@@ -146,7 +146,7 @@ jQuery(".fullSlide").slide({
             <td height='5' colspan='2'>
           </tr>
 
-          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=0092cb9b35b4321e9213555514993599&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D9+order+by+id+DESC&start=1&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=9 order by id DESC LIMIT 1,3");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=0092cb9b35b4321e9213555514993599&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D9+order+by+id+DESC&start=1&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=9 order by id DESC LIMIT 1,3");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
           <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
           <tr>
             <td width='75%'>
@@ -181,7 +181,7 @@ jQuery(".fullSlide").slide({
       <div class="HeightTab clearfix"></div>
       <table id="MBlockTable" width="100%" border="0" cellspacing="0" cellpadding="0">
         <ul>
-          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=fd07e9b9f80bb05e565926fcbc479c47&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D20+order+by+id+DESC&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=20 order by id DESC LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=fd07e9b9f80bb05e565926fcbc479c47&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D20+order+by+id+DESC&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=20 order by id DESC LIMIT 1");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
           <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
           <tr>
             <td width='75%'>
@@ -213,7 +213,7 @@ jQuery(".fullSlide").slide({
             <td height='5' colspan='2'>
           </tr>
 
-          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=66be2069f60dadf3671c53a1ccf6c10b&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D20+order+by+id+DESC&start=1&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=20 order by id DESC LIMIT 1,3");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+          <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=66be2069f60dadf3671c53a1ccf6c10b&sql=select+title%2Cdescription%2Curl%2Cupdatetime+from+u_news+where+catid%3D20+order+by+id+DESC&start=1&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select title,description,url,updatetime from u_news where catid=20 order by id DESC LIMIT 1,3");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
           <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
           <tr>
             <td width='75%'>
@@ -239,31 +239,41 @@ jQuery(".fullSlide").slide({
           <td height="21"></td>
         </tr>
         <tr>
-          <td><a href="/ZH/Service/OrderProducts/"><img src="<?php echo IMG_PATH;?>home/index_01.jpg" border="0"></a></td>
+          <td class="kk-hg kk-img1">
+            <a href="/ZH/Service/OrderProducts/" class="kk-a">在线订购产品</a>
+          </td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/ZH/Service/FeedBack/"><img src="<?php echo IMG_PATH;?>home/index_03.jpg" border="0" /></a></td>
+          <td class="kk-hg kk-img3">
+            <a href="/ZH/Service/FeedBack/" class="kk-a">在线技术支持</a>
+          </td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/ZH/Service/AfterSale/"><img src="<?php echo IMG_PATH;?>home/index_05.jpg" border="0" /></a></td>
+          <td class="kk-hg kk-img5">
+            <a href="/ZH/Service/AfterSale/" class="kk-a">在线售后服务</a>
+          </td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/ZH/Service/PF/Catalog/"><img src="<?php echo IMG_PATH;?>home/index_07.jpg" border="0" /></a></td>
+          <td class="kk-hg kk-img7">
+            <a href="/ZH/Service/PF/Catalog/" class="kk-a">索取最新型录</a>
+          </td>
         </tr>
         <tr>
           <td height="5"></td>
         </tr>
         <tr>
-          <td><a href="/ZH/Service/PF/Journal/"><img src="<?php echo IMG_PATH;?>home/index_09.jpg" border="0" /></a></td>
+          <td class="kk-hg kk-img9">
+            <a href="/ZH/Service/PF/Journal/" class="kk-a">北联电子期刊</a>
+          </td>
         </tr>
       </table>
     </div>

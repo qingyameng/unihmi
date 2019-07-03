@@ -582,3 +582,54 @@ body{
 	border-bottom-style: solid;
 	border-bottom-color: #c8c8c8;
 }
+
+
+.kk-a {
+	padding-left: 100px;
+    font-weight: bold;
+    color: #6c6c6c;
+}
+.kk-hg {
+	height: 36px;
+}
+.kk-img1 {
+    background: url(../../images/home/index_01.jpg) no-repeat;
+}
+.kk-img3 {
+    background: url(../../images/home/index_03.jpg) no-repeat;
+}
+.kk-img5 {
+    background: url(../../images/home/index_05.jpg) no-repeat;
+}
+.kk-img7 {
+    background: url(../../images/home/index_07.jpg) no-repeat;
+}
+.kk-img9 {
+    background: url(../../images/home/index_09.jpg) no-repeat;
+}
+
+.kkleft-a {
+	padding-left: 81px;
+    font-weight: bold;
+    color: #6c6c6c;
+    line-height: 36px;
+    font-size: 14px;
+}
+.kkleft-hg {
+	height: 36px;
+}
+.kkleft-img1 {
+	background: url(../../images/home/left_01.jpg) no-repeat;
+}
+.kkleft-img3 {
+	background: url(../../images/home/left_03.jpg) no-repeat;
+}
+.kkleft-img5 {
+	background: url(../../images/home/left_05.jpg) no-repeat;
+}
+.kkleft-img7 {
+	background: url(../../images/home/left_07.jpg) no-repeat;
+}
+.kkleft-img9 {
+	background: url(../../images/home/left_09.jpg) no-repeat;
+}

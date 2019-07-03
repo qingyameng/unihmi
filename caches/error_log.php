@@ -352,3 +352,397 @@
 <?php exit;?>06-26 15:25:15 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
 ) | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>06-26 15:25:58 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
+<?php exit;?>07-02 13:29:27 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:27 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:27 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:27 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:27 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:28 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:28 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:28 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:28 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:28 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:31 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:32 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:29:32 | 2 | mysqli::mysqli(): (HY000/1045): Access denied for user 'bxtouch-php'@'localhost' (using password: YES) | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:29:32 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:32:30 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:32:30 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:32:30 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:32:30 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:32:30 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:32:30 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:32:42 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:32:42 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:32:42 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:32:42 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:32:42 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:32:42 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:32:49 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:32:49 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:32:49 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:32:49 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:32:49 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:32:49 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:32:55 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:32:55 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:32:55 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:32:55 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:32:55 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:32:55 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:33:05 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:33:05 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:05 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:05 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:05 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:05 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:33:16 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:33:16 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:16 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:16 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:16 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:16 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:33:22 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:33:22 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:22 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:22 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:22 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:22 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:33:33 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:33:33 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:33 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:33 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:33 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:33 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:33:40 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:33:40 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:40 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:40 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:40 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:40 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:33:47 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:33:47 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:47 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:47 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:33:47 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:33:47 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:34:03 | 2 | mysqli::mysqli(): (HY000/2002): ����Ŀ����������ܾ����޷����ӡ�
+ | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:34:03 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:34:03 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:34:03 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:34:03 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:34:03 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:36:07 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:07 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:07 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:07 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:07 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:07 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:07 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:07 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:07 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:36:15 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:15 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:15 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:15 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:15 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:36:15 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:15 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:15 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:15 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:15 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:15 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:18 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:18 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:18 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:18 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:18 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:18 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:18 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:18 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:18 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:36:29 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:29 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:29 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:29 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:29 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:29 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:29 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:36:30 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:30 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:30 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:30 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:30 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:30 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:30 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:30 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:30 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:36:44 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:44 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:44 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:44 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:44 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:36:44 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:44 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:44 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:44 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:44 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:44 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:47 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:47 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:47 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:47 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:47 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 409
+<?php exit;?>07-02 13:36:47 | 2 | Packets out of order. Expected 0 received 32. Packet size=3158578 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:47 | 2 | mysqli::mysqli(): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:47 | 2 | mysqli::mysqli(): Error while reading greeting packet. PID=7228 | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:47 | 2 | mysqli::mysqli(): (HY000/2006): MySQL server has gone away | phpcms\libs\classes\db_mysqli.class.php | 55
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:47 | 2 | mysqli::query(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::execute(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 78
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 397
+<?php exit;?>07-02 13:36:47 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms\libs\classes\db_mysqli.class.php | 390
+<?php exit;?>07-02 13:40:37 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>07-02 13:40:37 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>07-02 13:41:07 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>07-02 13:41:07 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>07-02 13:42:59 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>07-02 13:42:59 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>07-02 13:43:24 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>07-02 13:43:24 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84

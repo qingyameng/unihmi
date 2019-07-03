@@ -5,7 +5,7 @@ return array (
     'appid' => '1',
     'type' => 'phpcms_v9',
     'name' => 'phpcms v9',
-    'url' => 'http://www.unihmi.com/',
+    'url' => 'http://www.bxtouch.com/',
     'authkey' => 'Cc642lcNaahWgnwIkwC9EGmeNnwlxap0',
     'ip' => '',
     'apifilename' => 'api.php?op=phpsso',
